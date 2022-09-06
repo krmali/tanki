@@ -1,23 +1,27 @@
 use yew::prelude::*;
 
-enum Status{
+#[derive(PartialEq)]
+pub enum Status{
     Done,
     NotDone,
-    WronglyDone
+    WronglyDone,
+    Doing
 }
 
-struct LetterStatus{
-    status: Status,
-    character: char,
+#[derive(Properties, PartialEq)]
+pub struct LetterProps{
+    pub status: Status,
+    pub character: char,
 }
 
 #[function_component(Letter)]
-fn letter(LetterStatus) -> Html {
+pub fn letter(LetterProps{status, character} : &LetterProps) -> Html {
     html! {
-        <h1>{ "Hello World!" }</h1>
+        <span style={match status{
+            Status::Done => "color: green;",
+            Status::Doing => "text-decoration: underline;",
+            Status::WronglyDone => "color: red",
+            _ => ""
+        }}>{character}</span>
     }
-}
-
-fn main() {
-    yew::Renderer::<App>::new().render();
 }

@@ -1,12 +1,7 @@
 use yew::prelude::*;
-
-#[function_component(App)]
-fn app() -> Html {
-    html! {
-        <h1>{ "Hello World!" }</h1>
-    }
-}
+mod components;
+use components::typing::Typing;
 
 fn main() {
-    yew::Renderer::<App>::new().render();
+    yew::Renderer::<Typing>::new().render();
 }
