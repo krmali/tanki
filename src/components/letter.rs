@@ -1,7 +1,7 @@
 use yew::prelude::*;
 
-#[derive(PartialEq)]
-pub enum Status{
+#[derive(PartialEq, Clone, Copy)]
+pub enum LetterStatus{
     Done,
     NotDone,
     WronglyDone,
@@ -10,7 +10,7 @@ pub enum Status{
 
 #[derive(Properties, PartialEq)]
 pub struct LetterProps{
-    pub status: Status,
+    pub status: LetterStatus,
     pub character: char,
 }
 
@@ -18,9 +18,9 @@ pub struct LetterProps{
 pub fn letter(LetterProps{status, character} : &LetterProps) -> Html {
     html! {
         <span style={match status{
-            Status::Done => "color: green;",
-            Status::Doing => "text-decoration: underline;",
-            Status::WronglyDone => "color: red",
+            LetterStatus::Done => "color: green;",
+            LetterStatus::Doing => "text-decoration: underline;",
+            LetterStatus::WronglyDone => "color: red",
             _ => ""
         }}>{character}</span>
     }
