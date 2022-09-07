@@ -28,7 +28,8 @@ pub fn typing(TypingProps { text }: &TypingProps) -> Html {
     //     // };
     //     log!(input.map(|input| input.value()))
     // });
-    let on_key_down = Callback::from(|event: KeyboardEvent| {
+    let on_key_down = Callback::from(move |event: KeyboardEvent| {
+        // let current_index = current_index.clone();
         log!(event.clone());
         let input = event.key();
         if input == "Backspace"{
