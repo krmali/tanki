@@ -18,7 +18,9 @@ impl Default for TypingProps {
 #[function_component(Typing)]
 pub fn typing(TypingProps { text }: &TypingProps) -> Html {
     let current_index = use_state(|| 0);
-    let vec = use_state(|| vec![LetterStatus::NotDone; text.len()]);
+    let mut statuses = vec![LetterStatus::NotDone; text.len()];
+    statuses[0] = LetterStatus::Doing;
+    let vec = use_state(|| statuses);
     // let on_key_down = Callback::from(|event: KeyboardEvent| {
     //     let target = event.target();
     //     let input = target.and_then(|t| t.dyn_into::<HtmlInputElement>().ok());
@@ -34,33 +36,53 @@ pub fn typing(TypingProps { text }: &TypingProps) -> Html {
         let text = text.clone();
         let vec = vec.clone();
         Callback::from(move |event: KeyboardEvent| {
-                log!(event.clone());
-                let input = event.key();
-                if input == "Backspace" {
-                    let mut new_vec = vec![LetterStatus::NotDone; text.len()];
-                    for (i, _) in vec.iter().enumerate(){
-                        new_vec[i] = vec[i];
-                    }
-                    new_vec[*current_index] = LetterStatus::NotDone;
-                    vec.set(new_vec);
-                    current_index.set(*current_index - 1);
+            log!(event.clone());
+            let input = event.key();
+            if input == "Backspace" {
+                if *current_index == 0 {
                     return;
                 }
-                if input.len() > 1 {
-                    return;
+                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+                for (i, _) in vec.iter().enumerate() {
+                    new_vec[i] = vec[i];
                 }
-                if input.bytes().nth(0) == text.bytes().nth(*current_index) {
-                    log!("increasing current index");
-                    let mut new_vec = vec![LetterStatus::NotDone; text.len()];
-                    for (i, _) in vec.iter().enumerate(){
-                        new_vec[i] = vec[i];
-                    }
-                    new_vec[*current_index] = LetterStatus::Done;
-                    vec.set(new_vec);
+                new_vec[*current_index] = LetterStatus::NotDone;
+                new_vec[*current_index - 1] = LetterStatus::Doing;
+                vec.set(new_vec);
+                current_index.set(*current_index - 1);
+                return;
+            }
+            if input.len() > 1 {
+                return;
+            }
+            if input.bytes().nth(0) == text.bytes().nth(*current_index) {
+                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+                for (i, _) in vec.iter().enumerate() {
+                    new_vec[i] = vec[i];
+                }
+                new_vec[*current_index] = LetterStatus::Done;
+                if *current_index + 1 < text.len() {
+                    new_vec[*current_index + 1] = LetterStatus::Doing;
                     current_index.set(*current_index + 1);
                 }
-            })
-
+                vec.set(new_vec);
+            } else {
+                let text_len = text.len() -1;
+                if (*current_index) == text_len {
+                    return;
+                }
+                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+                for (i, _) in vec.iter().enumerate() {
+                    new_vec[i] = vec[i];
+                }
+                new_vec[*current_index] = LetterStatus::WronglyDone;
+                if *current_index + 1 < text.len() {
+                    new_vec[*current_index + 1] = LetterStatus::Doing;
+                    current_index.set(*current_index + 1);
+                }
+                vec.set(new_vec);
+            }
+        })
     };
 
     let letters: Html = text
