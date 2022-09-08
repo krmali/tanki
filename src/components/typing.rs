@@ -1,3 +1,5 @@
+use chrono::prelude::*;
+
 use super::letter::{Letter, LetterStatus};
 use gloo::console::log;
 use yew::prelude::*;
@@ -5,36 +7,45 @@ use yew::prelude::*;
 #[derive(Properties, PartialEq)]
 pub struct TypingProps {
     pub text: String,
+    pub callback: Callback<f64>,
 }
 
-impl Default for TypingProps {
-    fn default() -> Self {
-        TypingProps {
-            text: "The quick brown fox jumps over the lazy dog".to_owned(),
+// impl Default for TypingProps {
+//     fn default() -> Self {
+//         TypingProps {
+//             text: "The quick brown fox jumps over the lazy dog".to_owned(),
+//             callback: Callback::from(move|wpm: f64| {})
+//         }
+//     }
+// }
+
+pub fn calculate_wpm(start: DateTime<Utc>, text: &String, vec: &Vec<LetterStatus>) -> f64 {
+    // let elapsed_duration = start.elapsed().unwrap_or_default(); 
+    let end = Utc::now();
+    let elapsed_duration_millis = end.signed_duration_since(start).num_milliseconds() as f64;
+    let mut errors_no : f64 = 0.0;
+    for i in vec{
+        match i {
+            LetterStatus::WronglyDone => errors_no += 1.0,
+            _ => ()
         }
     }
+    let words : f64 = (text.chars().count() as f64) /(5 as f64);
+    (words/elapsed_duration_millis) * (60000 as f64) - (errors_no/elapsed_duration_millis) * (60000 as f64)
 }
 
 #[function_component(Typing)]
-pub fn typing(TypingProps { text }: &TypingProps) -> Html {
+pub fn typing(TypingProps { text , callback}: &TypingProps) -> Html {
     let current_index = use_state(|| 0);
+    let start = use_state(|| Utc::now());
     let mut statuses = vec![LetterStatus::NotDone; text.len()];
     statuses[0] = LetterStatus::Doing;
     let vec = use_state(|| statuses);
-    // let on_key_down = Callback::from(|event: KeyboardEvent| {
-    //     let target = event.target();
-    //     let input = target.and_then(|t| t.dyn_into::<HtmlInputElement>().ok());
-    //     // let input = target.and_then(|t| t.into());
-    //     // match target{
-    //     //     Some(trgt) => log!(trgt.char_code()),
-    //     //     None => log!("no key down")
-    //     // };
-    //     log!(input.map(|input| input.value()))
-    // });
     let on_key_down = {
         let current_index = current_index.clone();
         let text = text.clone();
         let vec = vec.clone();
+        let callback = callback.clone();
         Callback::from(move |event: KeyboardEvent| {
             log!(event.clone());
             let input = event.key();
@@ -55,32 +66,28 @@ pub fn typing(TypingProps { text }: &TypingProps) -> Html {
             if input.len() > 1 {
                 return;
             }
-            if input.bytes().nth(0) == text.bytes().nth(*current_index) {
-                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
-                for (i, _) in vec.iter().enumerate() {
-                    new_vec[i] = vec[i];
-                }
-                new_vec[*current_index] = LetterStatus::Done;
-                if *current_index + 1 < text.len() {
-                    new_vec[*current_index + 1] = LetterStatus::Doing;
-                    current_index.set(*current_index + 1);
-                }
-                vec.set(new_vec);
-            } else {
-                let text_len = text.len() -1;
-                if (*current_index) == text_len {
-                    return;
-                }
-                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
-                for (i, _) in vec.iter().enumerate() {
-                    new_vec[i] = vec[i];
-                }
+
+            // character now is either a right or a wrong character
+            if *current_index == 0{
+                start.set(Utc::now());
+            }
+            let text_len = text.len() - 1;
+            let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+            for (i, _) in vec.iter().enumerate() {
+                new_vec[i] = vec[i];
+            }
+            new_vec[*current_index] = LetterStatus::Done;
+            if *current_index + 1 < text.len() {
+                new_vec[*current_index + 1] = LetterStatus::Doing;
+                current_index.set(*current_index + 1);
+            }
+            if input.bytes().nth(0) != text.bytes().nth(*current_index) {
                 new_vec[*current_index] = LetterStatus::WronglyDone;
-                if *current_index + 1 < text.len() {
-                    new_vec[*current_index + 1] = LetterStatus::Doing;
-                    current_index.set(*current_index + 1);
-                }
-                vec.set(new_vec);
+            }
+            vec.set(new_vec);
+            if (*current_index) == text_len {
+                callback.emit(calculate_wpm(*start, &text, &*vec));
+                return;
             }
         })
     };
@@ -91,14 +98,12 @@ pub fn typing(TypingProps { text }: &TypingProps) -> Html {
         .map(|(index, letter)| {
             html!(
             <Letter status={(*vec)[index]} character={letter}/>
-            // <Letter status={LetterStatus::Done} character={letter}/>
             )
         })
         .collect();
     html!(
     <div onkeydown={on_key_down} tabindex={0}>
         {letters}
-        <p>{*current_index}</p>
     </div>
     )
 }
