@@ -19,30 +19,28 @@ pub struct TypingProps {
 //     }
 // }
 
-pub fn calculate_wpm(start: DateTime<Utc>, text: &String, vec: &Vec<LetterStatus>) -> f64 {
-    // let elapsed_duration = start.elapsed().unwrap_or_default(); 
+pub fn calculate_wpm(start: DateTime<Utc>, text: &str, vec: &Vec<LetterStatus>) -> f64 {
     let end = Utc::now();
     let elapsed_duration_millis = end.signed_duration_since(start).num_milliseconds() as f64;
-    let mut errors_no : f64 = 0.0;
-    for i in vec{
-        match i {
-            LetterStatus::WronglyDone => errors_no += 1.0,
-            _ => ()
+    let mut errors_no: f64 = 0.0;
+    for i in vec {
+        if *i == LetterStatus::WronglyDone {
+            errors_no += 1.0
         }
     }
-    let words : f64 = (text.chars().count() as f64) /(5 as f64);
-    (words/elapsed_duration_millis) * (60000 as f64) - (errors_no/elapsed_duration_millis) * (60000 as f64)
+    let words: f64 = (text.chars().count() as f64) / (5_f64);
+    (words / elapsed_duration_millis) * (60000_f64)
+        - (errors_no / elapsed_duration_millis) * (60000_f64)
 }
 
 #[function_component(Typing)]
-pub fn typing(TypingProps { text , callback}: &TypingProps) -> Html {
+pub fn typing(TypingProps { text, callback }: &TypingProps) -> Html {
     let current_index = use_state(|| 0);
-    let start = use_state(|| Utc::now());
+    let start = use_state(Utc::now);
     let mut statuses = vec![LetterStatus::NotDone; text.len()];
     statuses[0] = LetterStatus::Doing;
     let vec = use_state(|| statuses);
     let on_key_down = {
-        let current_index = current_index.clone();
         let text = text.clone();
         let vec = vec.clone();
         let callback = callback.clone();
@@ -68,7 +66,7 @@ pub fn typing(TypingProps { text , callback}: &TypingProps) -> Html {
             }
 
             // character now is either a right or a wrong character
-            if *current_index == 0{
+            if *current_index == 0 {
                 start.set(Utc::now());
             }
             let text_len = text.len() - 1;
@@ -81,13 +79,13 @@ pub fn typing(TypingProps { text , callback}: &TypingProps) -> Html {
                 new_vec[*current_index + 1] = LetterStatus::Doing;
                 current_index.set(*current_index + 1);
             }
-            if input.bytes().nth(0) != text.bytes().nth(*current_index) {
+            // if input.bytes().nth(0) != text.bytes().nth(*current_index) {
+            if input.chars().next() != text.chars().nth(*current_index) {
                 new_vec[*current_index] = LetterStatus::WronglyDone;
             }
             vec.set(new_vec);
             if (*current_index) == text_len {
                 callback.emit(calculate_wpm(*start, &text, &*vec));
-                return;
             }
         })
     };
