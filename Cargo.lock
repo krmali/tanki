@@ -696,6 +696,7 @@ dependencies = [
  "gloo 0.6.1",
  "gloo-net 0.2.4",
  "serde",
+ "serde_json",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",

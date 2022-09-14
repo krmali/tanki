@@ -6,6 +6,9 @@ use serde::{Serialize, Deserialize};
 pub struct Card{
     pub front: String,
     pub back: String,
+    pub frequencey: String,
+    pub front_example: String,
+    pub back_example: String
 }
 
 // type Cards = Vec<Card>;
