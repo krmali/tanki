@@ -8,9 +8,9 @@ pub struct RandomCardsGenerator{
 }
 
 impl CardsGenerator for RandomCardsGenerator{
-    fn new(&self, map : &Vec<Card>, cards_no_to_generate: u32) -> Self {
+    fn new(vec: &Vec<Card>, cards_no_to_generate: u32) -> Self {
         RandomCardsGenerator{
-            cards : map.to_vec(),
+            cards : vec.to_vec(),
             cards_no_to_generate,
             generations_no : 0
         }
@@ -39,3 +39,4 @@ impl Clone for RandomCardsGenerator{
         *self
     }
 }
+

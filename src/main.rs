@@ -105,10 +105,18 @@ pub fn app() -> Html {
         )
 }
 
+#[derive(Properties, PartialEq)]
+pub struct TypingWrapperProps{
+    pub Cards: Vec<Card>,
+    pub CardsNoToGenerate: u32
+}
+
 #[function_component(TypingWrapper)]
-pub fn typing_wrapper() -> Html {
+pub fn typing_wrapper(TypingWrapperProps { Cards, CardsNoToGenerate}: &TypingWrapperProps) -> Html {
     // let cards_generator = use_context::<CardsGeneratorProvider<RandomCardsGenerator>>();
     let wpm_state : UseStateHandle<f64> = use_state(|| 0.0);
+    // let cards_generator = use_state(|| RandomCardsGenerator::new(&Cards, CardsNoToGenerate));
+    let cards_generator = use_state(|| RandomCardsGenerator::);
     let text = "The quick brown fox jumps over the lazy dog";
 
     let wpm_callback = {
@@ -119,11 +127,13 @@ pub fn typing_wrapper() -> Html {
 
 
     html!(
-        <CardsGeneratorProvider<RandomCardsGenerator>>
+        // <CardsGeneratorProvider cards_generator={}>
+        <>
             <Typing text={text} callback={wpm_callback}/>
             <div>
                 {*wpm_state}
             </div>
-        </CardsGeneratorProvider<RandomCardsGenerator>>
+            </>
+        // </CardsGeneratorProvider>
         )
 }
