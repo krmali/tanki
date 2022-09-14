@@ -9,7 +9,7 @@ mod data;
 use components::typing::Typing;
 use data::card::Card;
 
-pub type Welcome = Vec<WelcomeElement>;
+// pub type Welcome = Vec<WelcomeElement>;
 
 // #[derive(Serialize, Deserialize)]
 // pub struct WelcomeElement {

@@ -29,7 +29,7 @@
   },
   {
     "front": "dort",
-    "back": "[over]&nbsp;there",
+    "back": "[over] there",
     "frequencey": "134",
     "front_example": "Die Bushaltestelle ist dort drüben.",
     "back_example": "The bus stop is over there."
@@ -38,8 +38,8 @@
     "front": "dabei",
     "back": "thereby, in doing so",
     "frequencey": "135",
-    "front_example": "Ich lerne viel und kriege <b>dabei</b> gute Noten.",
-    "back_example": "I study a lot and <b>thereby</b>&nbsp;get good grades."
+    "front_example": "Ich lerne viel und kriege dabei gute Noten.",
+    "back_example": "I study a lot and thereby get good grades."
   },
   {
     "front": "dürfen",
@@ -80,8 +80,8 @@
     "front": "zwar",
     "back": "admittedly, to be precise",
     "frequencey": "178",
-    "front_example": "Er hat <b>zwar</b> Lust zu kommen, aber keine Zeit.<div>Sie haben ein Kind, und <b>zwar</b> einen Sohn.</div>",
-    "back_example": "<b>Admittedly</b> he feels like coming, but doesn't have time.<div>They have one child and <b>that happens to be</b> a son.</div>"
+    "front_example": "Er hat zwar Lust zu kommen, aber keine Zeit.Sie haben ein Kind, und zwar einen Sohn.",
+    "back_example": "Admittedly he feels like coming, but doesn't have time.They have one child and that happens to be a son."
   },
   {
     "front": "der Teil",
@@ -115,8 +115,8 @@
     "front": "bestehen",
     "back": "to exist, insist, pass (an exam)",
     "frequencey": "210",
-    "front_example": "Die EU <b>besteht</b> seit 2004 aus 25 Staaten.<div>Einige Firmen <b>bestehen</b> nur auf dem Papier.</div>",
-    "back_example": "The EU <b>exists</b> since 2004 and consists of 25 states.<div><div>Some companies <b>exist</b> only on paper.</div></div>"
+    "front_example": "Die EU besteht seit 2004 aus 25 Staaten.Einige Firmen bestehen nur auf dem Papier.",
+    "back_example": "The EU exists since 2004 and consists of 25 states.Some companies exist only on paper."
   },
   {
     "front": "dafür",
@@ -150,8 +150,8 @@
     "front": "allerdings",
     "back": "though, indeed, certainly",
     "frequencey": "221",
-    "front_example": "Dieser Vertrag kommt <b>allerdings</b> mit einigen Bedingungen.",
-    "back_example": "<div><b>However</b>, there are some conditions to this contract.</div>"
+    "front_example": "Dieser Vertrag kommt allerdings mit einigen Bedingungen.",
+    "back_example": "However, there are some conditions to this contract."
   },
   {
     "front": "wohl",
@@ -269,8 +269,8 @@
     "front": "sogar",
     "back": "even, in fact",
     "frequencey": "269",
-    "front_example": "Morgen wird es <b>sogar</b> noch heißer als heute.",
-    "back_example": "<div>Tomorrow is going to be <b>even</b> hotter than today.</div>"
+    "front_example": "Morgen wird es sogar noch heißer als heute.",
+    "back_example": "Tomorrow is going to be even hotter than today."
   },
   {
     "front": "damals",
@@ -465,8 +465,8 @@
     "front": "handeln",
     "back": "to deal / to act / to trade",
     "frequencey": "301",
-    "front_example": "Der Roman <b>handelt</b> von einer modernen Familie.<div>Wir müssen jetzt <b>handeln</b>, die Lage ist ernst.</div><div>Unsere Produkte werden nun weltweit <b>gehandelt</b>.</div><div></div>",
-    "back_example": "The novel <b>is about</b> a modern family.<div>We have<b> to act</b> now, the situation is serious.</div><div>Our products are now <b>traded</b> worldwide.</div>"
+    "front_example": "Der Roman handelt von einer modernen Familie.Wir müssen jetzt handeln, die Lage ist ernst.Unsere Produkte werden nun weltweit gehandelt.",
+    "back_example": "The novel is about a modern family.We have to act now, the situation is serious.Our products are now traded worldwide."
   },
   {
     "front": "die Entwicklung",
@@ -514,8 +514,8 @@
     "front": "eher",
     "back": "rather",
     "frequencey": "309",
-    "front_example": "Das neue Kleid, das ich mir gekauft habe, ist <b>eher</b> schlicht.",
-    "back_example": "The new dress I bought is <b>rather</b> simple."
+    "front_example": "Das neue Kleid, das ich mir gekauft habe, ist eher schlicht.",
+    "back_example": "The new dress I bought is rather simple."
   },
   {
     "front": "die Familie",
@@ -1109,8 +1109,8 @@
     "front": "die Rolle",
     "back": "roll, role",
     "frequencey": "396",
-    "front_example": "Er verbrauchte die ganze <b>Rolle</b> Klebeband.<div>Der Schauspieler hat viele <b>Rollen</b> gespielt.</div>",
-    "back_example": "He used up the whole <b>roll</b> of tape.<div>The actor has played many <b>roles</b>.</div>"
+    "front_example": "Er verbrauchte die ganze Rolle Klebeband.Der Schauspieler hat viele Rollen gespielt.",
+    "back_example": "He used up the whole roll of tape.The actor has played many roles."
   },
   {
     "front": "jemand",
@@ -1151,8 +1151,8 @@
     "front": "die Bedeutung",
     "back": "meaning, significance",
     "frequencey": "402",
-    "front_example": "Ich muss oft die <b>Bedeutung</b> unbekannter Wörter nachschlagen.",
-    "back_example": "<div>I often have to look up the <b>meaning</b> of unfamiliar words.</div>"
+    "front_example": "Ich muss oft die Bedeutung unbekannter Wörter nachschlagen.",
+    "back_example": "I often have to look up the meaning of unfamiliar words."
   },
   {
     "front": "der Text",
@@ -1263,8 +1263,8 @@
     "front": "das Gespräch",
     "back": "conversation",
     "frequencey": "420",
-    "front_example": "Ein vernünftiges <b>Gespräch</b> war nicht mehr möglich.",
-    "back_example": "A rational <b>conversation</b> was no longer possible."
+    "front_example": "Ein vernünftiges Gespräch war nicht mehr möglich.",
+    "back_example": "A rational conversation was no longer possible."
   },
   {
     "front": "bieten",
@@ -1284,8 +1284,8 @@
     "front": "wesentlich",
     "back": "essential, fundamental",
     "frequencey": "423",
-    "front_example": "Das ist ein ganz <b>wesentlicher</b> Unterschied.",
-    "back_example": "This is a very <b>important/essential</b>&nbsp;difference."
+    "front_example": "Das ist ein ganz wesentlicher Unterschied.",
+    "back_example": "This is a very important/essential difference."
   },
   {
     "front": "erinnern",
@@ -1401,7 +1401,7 @@
   },
   {
     "front": "die Kunst",
-    "back": "the&nbsp;art",
+    "back": "the art",
     "frequencey": "468",
     "front_example": "Schreiben ist eine Kunst.",
     "back_example": "Writing is an art."
@@ -1508,8 +1508,8 @@
     "front": "ausgehen",
     "back": "to run out / to assume",
     "frequencey": "483",
-    "front_example": "Ich kaufe immer mehr Milch, bevor sie <b>ausgeht</b>.<div>Ich <b>gehe davon aus</b>, dass du mitkommst.</div>",
-    "back_example": "I always buy more milk before it <b>runs out.</b><div>I <b>assume</b> that you are coming with me.</div>"
+    "front_example": "Ich kaufe immer mehr Milch, bevor sie ausgeht.Ich gehe davon aus, dass du mitkommst.",
+    "back_example": "I always buy more milk before it runs out.I assume that you are coming with me."
   },
   {
     "front": "die Regel",
@@ -1585,8 +1585,8 @@
     "front": "annehmen",
     "back": "to accept, assume",
     "frequencey": "495",
-    "front_example": "Sie hat die Einladung zum Konzert <b>angenommen</b>.",
-    "back_example": "<div>She <b>accepted</b> the invitation to the concert.</div>"
+    "front_example": "Sie hat die Einladung zum Konzert angenommen.",
+    "back_example": "She accepted the invitation to the concert."
   },
   {
     "front": "endlich",
@@ -1722,7 +1722,7 @@
     "back_example": "The daughter of the mayor opened the ball."
   },
   {
-    "front": "<sup>sich</sup>&nbsp;befinden (not sein. reflexive verb)",
+    "front": "sich befinden (not sein. reflexive verb)",
     "back": "to be [located]",
     "frequencey": "515",
     "front_example": "Der Park befindet sich außerhalb der Innenstadt.",
@@ -1757,7 +1757,7 @@
     "back_example": "The church stands on a hill."
   },
   {
-    "front": "aufgrund <sup>+ dat</sup>",
+    "front": "aufgrund + dat",
     "back": "on the basis of, because of",
     "frequencey": "520",
     "front_example": "Aufgrund einer Störung fiel der Strom für drei Stunden aus.",
@@ -1775,7 +1775,7 @@
     "back": "as well",
     "frequencey": "523",
     "front_example": "Die Nachfrage nach DVD-Spielern ist ebenfalls gesunken.",
-    "back_example": "The demand for DVD players has <b>also</b> declined."
+    "back_example": "The demand for DVD players has also declined."
   },
   {
     "front": "der Film",
@@ -1922,7 +1922,7 @@
     "back": "to step, to kick,",
     "frequencey": "545",
     "front_example": "Der Schauspieler trat ins Rampenlicht.",
-    "back_example": "<div>The actor stepped into the spotlight.</div><div><br /></div>"
+    "back_example": "The actor stepped into the spotlight."
   },
   {
     "front": "der Betrieb",
@@ -2061,8 +2061,8 @@
     "front": "erfolgen",
     "back": "to take place, occur (to follow)",
     "frequencey": "568",
-    "front_example": "Die Lieferung <b>erfolgt</b> innerhalb von zwei Tagen.",
-    "back_example": "<div>Delivery will <b>take place</b> within two days.</div>"
+    "front_example": "Die Lieferung erfolgt innerhalb von zwei Tagen.",
+    "back_example": "Delivery will take place within two days."
   },
   {
     "front": "gesamt",
@@ -2100,7 +2100,7 @@
     "back_example": "The cream contains no preservatives."
   },
   {
-    "front": "<sup>sich&nbsp;</sup>betrachten",
+    "front": "sich betrachten",
     "back": "to look at, consider",
     "frequencey": "575",
     "front_example": "Er betrachtet sich als einen großen Künstler.",
@@ -2121,7 +2121,7 @@
     "back_example": "I have had no success with my application."
   },
   {
-    "front": "<sup>dat</sup>&nbsp;gelingen",
+    "front": "dat gelingen",
     "back": "to succeed (to manage to succeed regarding something)",
     "frequencey": "578",
     "front_example": "Ihr gelang ein großartiger Roman.",
@@ -2138,8 +2138,8 @@
     "front": "jeweils",
     "back": "at a time",
     "frequencey": "580",
-    "front_example": "<div>Ich kann mich nur auf <b>jeweils</b> eine Sache konzentrieren.</div>",
-    "back_example": "<div>I can only focus on one thing <b>at a time</b>.</div>"
+    "front_example": "Ich kann mich nur auf jeweils eine Sache konzentrieren.",
+    "back_example": "I can only focus on one thing at a time."
   },
   {
     "front": "kaufen",
@@ -2425,7 +2425,7 @@
     "front": "sowohl ... als auch",
     "back": "both...and",
     "frequencey": "622",
-    "front_example": "Das betrifft <b>sowohl</b> Männer <b>als auch</b> Frauen.",
+    "front_example": "Das betrifft sowohl Männer als auch Frauen.",
     "back_example": "This applies to both men and women."
   },
   {
@@ -2440,14 +2440,14 @@
     "back": "nevertheless, anyway, however",
     "frequencey": "624",
     "front_example": "Ich habe trotzdem Angst.",
-    "back_example": "<div>I'm nonetheless scared</div>"
+    "back_example": "I'm nonetheless scared"
   },
   {
-    "front": "<div>das Verhalten</div><div><sup>sich</sup> verhalten</div>",
+    "front": "das Verhaltensich verhalten",
     "back": "to behave, react (how one handles oneself)",
     "frequencey": "625",
-    "front_example": "<div>Er wurde für sein ausgezeichnetes <b>Verhalten</b> an der Schule beglückwünscht.</div>Das Kind <b>verhielt</b> <b>sich</b> auf der Hochzeit wie ein Erwachsener.",
-    "back_example": "<div>He was congratulated for his excellent <b>conduct</b> at school.</div><div><div>The child <b>behaved</b> like an adult during the wedding.</div></div>"
+    "front_example": "Er wurde für sein ausgezeichnetes Verhalten an der Schule beglückwünscht.Das Kind verhielt sich auf der Hochzeit wie ein Erwachsener.",
+    "back_example": "He was congratulated for his excellent conduct at school.The child behaved like an adult during the wedding."
   },
   {
     "front": "zudem [adverb]",
@@ -2803,8 +2803,8 @@
     "front": "der Einsatz",
     "back": "use, application, deployment",
     "frequencey": "677",
-    "front_example": "Reinigen Sie das Gerät nach jedem <b>Einsatz</b>.",
-    "back_example": "<div>Clean the appliance after every <b>use</b>.</div>"
+    "front_example": "Reinigen Sie das Gerät nach jedem Einsatz.",
+    "back_example": "Clean the appliance after every use."
   },
   {
     "front": "das Gebiet",
@@ -2817,8 +2817,8 @@
     "front": "vorliegen",
     "back": "to be, exist, to be available",
     "frequencey": "679",
-    "front_example": "Das Dokument <b>liegt</b> in drei verschiedenen Dateiformaten <b>vor</b>.&nbsp;",
-    "back_example": "The document <b>exists</b> in three different file formats."
+    "front_example": "Das Dokument liegt in drei verschiedenen Dateiformaten vor. ",
+    "back_example": "The document exists in three different file formats."
   },
   {
     "front": "zählen",
@@ -2859,8 +2859,8 @@
     "front": "die Angabe",
     "back": "indication, specification",
     "frequencey": "685",
-    "front_example": "Auf einer Verpackung sollte eine <b>Angabe</b> über den Preis des Produkts stehen.",
-    "back_example": "A package should contain an <b>indication</b> of the price of the product."
+    "front_example": "Auf einer Verpackung sollte eine Angabe über den Preis des Produkts stehen.",
+    "back_example": "A package should contain an indication of the price of the product."
   },
   {
     "front": "bauen",
@@ -2901,8 +2901,8 @@
     "front": "außer",
     "back": "except, apart from",
     "frequencey": "691",
-    "front_example": "<b>Außer</b> ihm hat keiner hier gute Noten.",
-    "back_example": "No one has good grades here, <b>except</b> him"
+    "front_example": "Außer ihm hat keiner hier gute Noten.",
+    "back_example": "No one has good grades here, except him"
   },
   {
     "front": "freuen",
@@ -2922,8 +2922,8 @@
     "front": "die Verfügung",
     "back": "order, decree, disposal",
     "frequencey": "694",
-    "front_example": "Das Gericht hat eine <b>Verfügung</b> erlassen.",
-    "back_example": "<div>The court issued a <b>decree</b>.</div>"
+    "front_example": "Das Gericht hat eine Verfügung erlassen.",
+    "back_example": "The court issued a decree."
   },
   {
     "front": "bezahlen",
@@ -2943,8 +2943,8 @@
     "front": "das Fach",
     "back": "compartment, subject",
     "frequencey": "698",
-    "front_example": "Welche <b>Fächer</b> studierst du?<div>Der Spind hat ein <b>Fach</b> für persönliche Gegenstände.<br /><div></div></div>",
-    "back_example": "What <b>subjects</b> do you study?<div>The locker has a <b>compartment</b> for personal items.</div>"
+    "front_example": "Welche Fächer studierst du?Der Spind hat ein Fach für persönliche Gegenstände.",
+    "back_example": "What subjects do you study?The locker has a compartment for personal items."
   },
   {
     "front": "das Herz",
@@ -2964,15 +2964,15 @@
     "front": "die Menge",
     "back": "quantity, amount",
     "frequencey": "701",
-    "front_example": "<div>Der Preis hängt von der gekauften <b>Menge</b> ab.</div>Die Medizin ist harmlos in kleinen <b>Mengen</b>.",
-    "back_example": "The price depends on the <b>quantity</b> bought.<div>The medicine is harmless in small <b>quantities</b>.</div>"
+    "front_example": "Der Preis hängt von der gekauften Menge ab.Die Medizin ist harmlos in kleinen Mengen.",
+    "back_example": "The price depends on the quantity bought.The medicine is harmless in small quantities."
   },
   {
     "front": "stecken",
     "back": "to put, to plug",
     "frequencey": "702",
-    "front_example": "Er zählte das Geld und <b>steckte</b> es in seine Geldbörse.<div><b>Stecken</b> Sie den Stecker in die Buchse, um das Gerät einzuschalten.</div>",
-    "back_example": "He counted the money and <b>put</b> it in his wallet.<div><b>Plug</b> the connector into the socket in order to switch on the device.</div>"
+    "front_example": "Er zählte das Geld und steckte es in seine Geldbörse.Stecken Sie den Stecker in die Buchse, um das Gerät einzuschalten.",
+    "back_example": "He counted the money and put it in his wallet.Plug the connector into the socket in order to switch on the device."
   },
   {
     "front": "besuchen",
@@ -3171,7 +3171,7 @@
     "back_example": "Life is hard."
   },
   {
-    "front": "vorhanden<img src=\"Screen Shot 2018-04-23 at 14.07.15.png\" />",
+    "front": "vorhanden",
     "back": "available, existing",
     "frequencey": "731",
     "front_example": "Es ist kein Papier mehr vorhanden.",
@@ -3223,8 +3223,8 @@
     "front": "melden",
     "back": "to report, register",
     "frequencey": "738",
-    "front_example": "Der Wetterbericht <b>meldet</b> Schnee für das Wochenende.",
-    "back_example": "The weather <b>reports</b> snow for the weekend."
+    "front_example": "Der Wetterbericht meldet Schnee für das Wochenende.",
+    "back_example": "The weather reports snow for the weekend."
   },
   {
     "front": "der Computer",
@@ -3244,8 +3244,8 @@
     "front": "[darüber] hinaus",
     "back": "out",
     "frequencey": "741",
-    "front_example": "Sie ging durch die Hintertür&nbsp;<b>hinaus</b>.<div><b>Darüber hinaus</b> gibt es nichts zu berichten.</div>",
-    "back_example": "She went <b>out</b> by the back door.<div><b>In addition</b>, there is nothing to report.</div>"
+    "front_example": "Sie ging durch die Hintertür hinaus.Darüber hinaus gibt es nichts zu berichten.",
+    "back_example": "She went out by the back door.In addition, there is nothing to report."
   },
   {
     "front": "künftig",
@@ -3293,8 +3293,8 @@
     "front": "betonen",
     "back": "to stress, underline, highlight, emphasize",
     "frequencey": "749",
-    "front_example": "Der Professor <b>betont</b> noch einmal, dass das Seminar Pflicht ist.",
-    "back_example": "The professor <b>emphasizes</b> again, that the seminar is mandatory."
+    "front_example": "Der Professor betont noch einmal, dass das Seminar Pflicht ist.",
+    "back_example": "The professor emphasizes again, that the seminar is mandatory."
   },
   {
     "front": "dennoch",
@@ -3335,8 +3335,8 @@
     "front": "die Maßnahme",
     "back": "measure (the precaution)",
     "frequencey": "755",
-    "front_example": "Jetzt müssen geeignete <b>Maßnahmen</b> zum Hochwasserschutz getroffen werden.",
-    "back_example": "Now appropriate <b>steps/measures</b> have to be taken for flood protection."
+    "front_example": "Jetzt müssen geeignete Maßnahmen zum Hochwasserschutz getroffen werden.",
+    "back_example": "Now appropriate steps/measures have to be taken for flood protection."
   },
   {
     "front": "die Mitte",
@@ -3384,8 +3384,8 @@
     "front": "der Beginn",
     "back": "beginning",
     "frequencey": "762",
-    "front_example": "Der <b>Beginn</b> der Sommerzeit ist Ende März.",
-    "back_example": "The <b>start</b> of daylight saving time is in late March."
+    "front_example": "Der Beginn der Sommerzeit ist Ende März.",
+    "back_example": "The start of daylight saving time is in late March."
   },
   {
     "front": "das Glück",
@@ -3426,8 +3426,8 @@
     "front": "[sich] beteiligen",
     "back": "to participate, take part in,",
     "frequencey": "768",
-    "front_example": "Viele Studenten <b>beteiligten</b> <b>sich</b> an der Demonstration.",
-    "back_example": "Many students<b> took part </b>in the demonstration."
+    "front_example": "Viele Studenten beteiligten sich an der Demonstration.",
+    "back_example": "Many students took part in the demonstration."
   },
   {
     "front": "die Bevölkerung",
@@ -3451,11 +3451,11 @@
     "back_example": "A professor from the United States is teaching at the Institute of Linguistics."
   },
   {
-    "front": "<div>etw<sup>akk</sup>&nbsp;merken</div><div>sich<sup>dat&nbsp;</sup>etwas<sup>akk&nbsp;</sup>merken</div>",
-    "back": "<div>to notice</div><div>to remember</div>",
+    "front": "etwakk merkensichdat etwasakk merken",
+    "back": "to noticeto remember",
     "frequencey": "772",
-    "front_example": "<div>Ich muss <b>mir</b>&nbsp;das Rezept für den leckeren Kuchen <b>merken</b>.<br /><div></div></div>",
-    "back_example": "<div>I have to <b>remember</b> the recipe for the delicious cake.</div>"
+    "front_example": "Ich muss mir das Rezept für den leckeren Kuchen merken.",
+    "back_example": "I have to remember the recipe for the delicious cake."
   },
   {
     "front": "nochmal",
@@ -3503,8 +3503,8 @@
     "front": "eignen (sich)",
     "back": "to be suitable",
     "frequencey": "780",
-    "front_example": "Dieses Messer<b> eignet sich</b> sehr gut zum Brotschneiden.",
-    "back_example": "This knife <b>is suitable</b> for cutting bread."
+    "front_example": "Dieses Messer eignet sich sehr gut zum Brotschneiden.",
+    "back_example": "This knife is suitable for cutting bread."
   },
   {
     "front": "die Erde",
@@ -3514,11 +3514,11 @@
     "back_example": "The Earth moves around the sun."
   },
   {
-    "front": "richten / [sich] richten [nach etw<sup>dat</sup>]",
+    "front": "richten / [sich] richten [nach etwdat]",
     "back": "comform, comply, follow",
     "frequencey": "782",
-    "front_example": "Ich <b>richte</b> <b>mich</b> nicht <b>nach</b> deine<b>n</b> Wünsche<b>n</b>.<div>Ich <b>richtete</b> die Kamera auf meinen Freund und machte das Foto.</div>",
-    "back_example": "I don't <b>follow</b> your wishes.<div><div>I <b>pointed</b> the camera at my friend and took the photo.</div></div>"
+    "front_example": "Ich richte mich nicht nach deinen Wünschen.Ich richtete die Kamera auf meinen Freund und machte das Foto.",
+    "back_example": "I don't follow your wishes.I pointed the camera at my friend and took the photo."
   },
   {
     "front": "umfassen",
@@ -3612,11 +3612,11 @@
     "back_example": "The proximity to downtown makes the apartment attractive."
   },
   {
-    "front": "das Prinzip <sup>[aus prinzip]</sup>",
+    "front": "das Prinzip [aus prinzip]",
     "back": "principle",
     "frequencey": "796",
-    "front_example": "Ich esse <b>aus Prinzip</b> kein Fleisch.",
-    "back_example": "I do not eat meat <b>as a matter of principle.</b>"
+    "front_example": "Ich esse aus Prinzip kein Fleisch.",
+    "back_example": "I do not eat meat as a matter of principle."
   },
   {
     "front": "schlimm",
@@ -3643,15 +3643,15 @@
     "front": "beschäftigen",
     "back": "to employ, be busy, deal with (busy oneself with)",
     "frequencey": "800",
-    "front_example": "Mit solchen Sachen <b>beschäftige</b> ich mich nicht.<div>Unsere Firma <b>beschäftigt</b> Spezialisten aus aller Welt.</div>",
-    "back_example": "I don't <b>deal</b> with things like those.<div>Our company <b>employs</b> experts from all over the world.</div>"
+    "front_example": "Mit solchen Sachen beschäftige ich mich nicht.Unsere Firma beschäftigt Spezialisten aus aller Welt.",
+    "back_example": "I don't deal with things like those.Our company employs experts from all over the world."
   },
   {
     "front": "daraus",
     "back": "hence, from it",
     "frequencey": "801",
-    "front_example": "Das ist mein Glas, wer hat <b>daraus</b> getrunken?<div><b>Daraus</b> ist zu ersehen, dass Vorsicht am Platze ist</div>",
-    "back_example": "That's my glass, who drank <b>from it</b>?<div><b>Hence</b> it can be seen that caution is in place</div>"
+    "front_example": "Das ist mein Glas, wer hat daraus getrunken?Daraus ist zu ersehen, dass Vorsicht am Platze ist",
+    "back_example": "That's my glass, who drank from it?Hence it can be seen that caution is in place"
   },
   {
     "front": "lösen",
@@ -3685,8 +3685,8 @@
     "front": "die Bedingung",
     "back": "condition",
     "frequencey": "806",
-    "front_example": "Unter solchen <b>Bedingungen</b> kann ich nicht arbeiten.<div>Die <b>Bedingungen</b> fürs Segeln sind heute ideal.</div>",
-    "back_example": "Under such <b>conditions</b>, I cannot work.<div><b>Conditions</b> are ideal for sailing today.</div>"
+    "front_example": "Unter solchen Bedingungen kann ich nicht arbeiten.Die Bedingungen fürs Segeln sind heute ideal.",
+    "back_example": "Under such conditions, I cannot work.Conditions are ideal for sailing today."
   },
   {
     "front": "lieb",
@@ -3783,15 +3783,15 @@
     "front": "durchaus",
     "back": "absolutely, by all means",
     "frequencey": "820",
-    "front_example": "Ich bin <b>durchaus</b> deiner Meinung, würde aber gerne noch etwas warten mit der Entscheidung.<div>Das ist <b>durchaus</b> eine gute Frage.</div>",
-    "back_example": "I <b>absolutely</b> agree with your opinion, but would like to wait a bit with the decision.<div>This is <b>by all means</b> a good question.</div>"
+    "front_example": "Ich bin durchaus deiner Meinung, würde aber gerne noch etwas warten mit der Entscheidung.Das ist durchaus eine gute Frage.",
+    "back_example": "I absolutely agree with your opinion, but would like to wait a bit with the decision.This is by all means a good question."
   },
   {
     "front": "durchführen",
     "back": "to carry out, hold",
     "frequencey": "821",
-    "front_example": "Wir <b>führen</b> in diesem Monat keine Kurse mehr <b>durch</b>.",
-    "back_example": "We don't <b>carry out </b>any more classes this month."
+    "front_example": "Wir führen in diesem Monat keine Kurse mehr durch.",
+    "back_example": "We don't carry out any more classes this month."
   },
   {
     "front": "genügen",
@@ -3846,8 +3846,8 @@
     "front": "die Veränderung",
     "back": "change",
     "frequencey": "829",
-    "front_example": "Ich kann mich schwer auf <b>Veränderungen</b> einstellen.",
-    "back_example": "I seriously cannot adapt to <b>changes</b>."
+    "front_example": "Ich kann mich schwer auf Veränderungen einstellen.",
+    "back_example": "I seriously cannot adapt to changes."
   },
   {
     "front": "aufbauen",
@@ -3923,7 +3923,7 @@
     "front": "einerseits, andererseits",
     "back": "on the other hand",
     "frequencey": "840",
-    "front_example": "Er ist <b>einerseits</b> sehr erfolgreich, <b>andererseits</b> aber auch sehr unglücklich.",
+    "front_example": "Er ist einerseits sehr erfolgreich, andererseits aber auch sehr unglücklich.",
     "back_example": "On one hand he is very successful, but on the other hand also very unhappy."
   },
   {
@@ -3951,8 +3951,8 @@
     "front": "die Rede",
     "back": "speech, talk, monologue",
     "frequencey": "844",
-    "front_example": "Der Direktor hielt zum Ende des Schuljahres eine <b>Rede</b>.",
-    "back_example": "The principal gave a <b>speech</b> at the term's end."
+    "front_example": "Der Direktor hielt zum Ende des Schuljahres eine Rede.",
+    "back_example": "The principal gave a speech at the term's end."
   },
   {
     "front": "der Sport",
@@ -4007,8 +4007,8 @@
     "front": "eingehen",
     "back": "to take, to form",
     "frequencey": "852",
-    "front_example": "Er hat eine Bereitschaft gezeigt, Risiken <b>einzugehen</b>.<div>Die Firmen <b>gingen</b> eine Allianz <b>ein</b>, um den Handel zu fördern.</div>",
-    "back_example": "<div>He has shown a disposition to <b>take</b> risks.</div><div><div>The companies <b>formed</b> an alliance to boost trade.</div></div>"
+    "front_example": "Er hat eine Bereitschaft gezeigt, Risiken einzugehen.Die Firmen gingen eine Allianz ein, um den Handel zu fördern.",
+    "back_example": "He has shown a disposition to take risks.The companies formed an alliance to boost trade."
   },
   {
     "front": "erlauben",
@@ -4018,11 +4018,11 @@
     "back_example": "The parents allow their children to stay outside until nine."
   },
   {
-    "front": "die Forderung,<div>Forderungen nachkommen</div>",
-    "back": "demand, claim<div>meet the demands</div>",
+    "front": "die Forderung,Forderungen nachkommen",
+    "back": "demand, claimmeet the demands",
     "frequencey": "854",
-    "front_example": "Der Chef <u>kommt</u> <b>den</b> <b>Forderungen</b> zur <sup>dat</sup> Gehaltserhöhung nicht <u>nach</u>.",
-    "back_example": "The boss is not <u>meeting</u> <b>the demand</b> for a salary increase."
+    "front_example": "Der Chef kommt den Forderungen zur dat Gehaltserhöhung nicht nach.",
+    "back_example": "The boss is not meeting the demand for a salary increase."
   },
   {
     "front": "geboren",
@@ -4077,8 +4077,8 @@
     "front": "ausreichen",
     "back": "to be sufficient, to be enough",
     "frequencey": "862",
-    "front_example": "Sein Lohn <b>reicht</b> oft nicht <b>aus</b>.",
-    "back_example": "His salary <b>is</b> often not <b>enough</b>."
+    "front_example": "Sein Lohn reicht oft nicht aus.",
+    "back_example": "His salary is often not enough."
   },
   {
     "front": "schweigen",
@@ -4126,8 +4126,8 @@
     "front": "treiben",
     "back": "to drive, pursue, to float",
     "frequencey": "869",
-    "front_example": "Die Nachfrage treibt die Preise in die Höhe.<div><br></div><div>Holz treibt im Wasser</div>",
-    "back_example": "The demand drives up the prices.<div><br></div><div>Wood floats on water.&nbsp;</div>"
+    "front_example": "Die Nachfrage treibt die Preise in die Höhe.Holz treibt im Wasser",
+    "back_example": "The demand drives up the prices.Wood floats on water. "
   },
   {
     "front": "überzeugen",
@@ -4140,8 +4140,8 @@
     "front": "die Voraussetzung",
     "back": "condition, requirement",
     "frequencey": "871",
-    "front_example": "Der Vertrag ist nur unter bestimmten<b> Voraussetzungen</b> gültig.",
-    "back_example": "<div>The contract is only valid under certain <b>conditions</b>.</div>"
+    "front_example": "Der Vertrag ist nur unter bestimmten Voraussetzungen gültig.",
+    "back_example": "The contract is only valid under certain conditions."
   },
   {
     "front": "benutzen",
@@ -4154,8 +4154,8 @@
     "front": "drohen",
     "back": "to threaten, lurk, impend",
     "frequencey": "873",
-    "front_example": "Der Sturm <b>droht</b> die Ernte zu vernichten.",
-    "back_example": "<div>The storm <b>threatens</b> to destroy the crops.</div>"
+    "front_example": "Der Sturm droht die Ernte zu vernichten.",
+    "back_example": "The storm threatens to destroy the crops."
   },
   {
     "front": "ehemalig",
@@ -4196,8 +4196,8 @@
     "front": "stets",
     "back": "always",
     "frequencey": "880",
-    "front_example": "Das Kinoprogramm findet man <b>stets</b> aktuell im Internet.",
-    "back_example": "The theater schedule can <b>always</b> be found on the internet."
+    "front_example": "Das Kinoprogramm findet man stets aktuell im Internet.",
+    "back_example": "The theater schedule can always be found on the internet."
   },
   {
     "front": "versprechen",
@@ -4259,8 +4259,8 @@
     "front": "darunter",
     "back": "under it, beneath / among them",
     "frequencey": "890",
-    "front_example": "<div>Es waren viele Gäste da, <b>darunter</b> ein paar Kinder.</div><div>Um zu sehen, was sich <b>darunter</b> befindet, muss man die Abdeckung hochheben.</div>",
-    "back_example": "<div>There were many guests, <b>among them</b> a few children.</div><div><div>To see what is <b>beneath</b>, you need to lift the cover.</div></div>"
+    "front_example": "Es waren viele Gäste da, darunter ein paar Kinder.Um zu sehen, was sich darunter befindet, muss man die Abdeckung hochheben.",
+    "back_example": "There were many guests, among them a few children.To see what is beneath, you need to lift the cover."
   },
   {
     "front": "erforderlich",
@@ -4280,8 +4280,8 @@
     "front": "das Konzept",
     "back": "draft, plan, concept",
     "frequencey": "893",
-    "front_example": "Das <b>Konzept</b> für den neuen Studiengang ist noch nicht fertig.",
-    "back_example": "The <b>concept</b> for the new course of studies is not finished yet."
+    "front_example": "Das Konzept für den neuen Studiengang ist noch nicht fertig.",
+    "back_example": "The concept for the new course of studies is not finished yet."
   },
   {
     "front": "kosten",
@@ -4357,8 +4357,8 @@
     "front": "drehen",
     "back": "to turn, to rotate",
     "frequencey": "904",
-    "front_example": "Der Wind <b>dreht</b>.<div><br></div><div><div>Nun, ich kann es im Uhrzeigersinn um eine Dritteldrehung&nbsp;<b>drehen</b>, oder ein Drittel im Gegenuhrzeigersinn.</div></div>",
-    "back_example": "The wind is <b>turning</b>.<div><br></div><div>Well, I can <b>rotate</b> by a third of a turn clockwise or a third of a turn anticlockwise.<br></div>"
+    "front_example": "Der Wind dreht.Nun, ich kann es im Uhrzeigersinn um eine Dritteldrehung drehen, oder ein Drittel im Gegenuhrzeigersinn.",
+    "back_example": "The wind is turning.Well, I can rotate by a third of a turn clockwise or a third of a turn anticlockwise."
   },
   {
     "front": "ruhig",
@@ -4385,8 +4385,8 @@
     "front": "bewusst",
     "back": "conscious, being aware",
     "frequencey": "908",
-    "front_example": "Ich bin mir der Gefahr durchaus <b>bewusst</b>.",
-    "back_example": "I am quite <b>aware</b> of the danger."
+    "front_example": "Ich bin mir der Gefahr durchaus bewusst.",
+    "back_example": "I am quite aware of the danger."
   },
   {
     "front": "finanziell",
@@ -4427,15 +4427,15 @@
     "front": "der Rücken",
     "back": "back",
     "frequencey": "914",
-    "front_example": "Ich liege auf de<b>m Rücken</b> und schaue den Wolken <b>zu</b>.",
-    "back_example": "<div>I lie on my <b>back</b> and watch the clouds.</div>"
+    "front_example": "Ich liege auf dem Rücken und schaue den Wolken zu.",
+    "back_example": "I lie on my back and watch the clouds."
   },
   {
     "front": "weiterhin",
     "back": "still, furthermore",
     "frequencey": "915",
-    "front_example": "Georg arbeitet <b>auch weiterhin</b> in unserer Firma.",
-    "back_example": "George <b>still</b> works at our company."
+    "front_example": "Georg arbeitet auch weiterhin in unserer Firma.",
+    "back_example": "George still works at our company."
   },
   {
     "front": "die Zelle",
@@ -4476,8 +4476,8 @@
     "front": "immerhin",
     "back": "at least",
     "frequencey": "922",
-    "front_example": "<b>Immerhin</b> müssen wir keine Studiengebühren zahlen.",
-    "back_example": "<b>At least </b>we don't have to pay any tuition fees."
+    "front_example": "Immerhin müssen wir keine Studiengebühren zahlen.",
+    "back_example": "At least we don't have to pay any tuition fees."
   },
   {
     "front": "der Inhalt",
@@ -4551,7 +4551,7 @@
   },
   {
     "front": "das Maß",
-    "back": "<sup>the&nbsp;</sup>measure",
+    "back": "the measure",
     "frequencey": "933",
     "front_example": "Der Mensch ist das Maß aller Dinge.",
     "back_example": "A human is the measure of all things."
@@ -4581,8 +4581,8 @@
     "front": "der Ansatz",
     "back": "approach, estimate",
     "frequencey": "938",
-    "front_example": "Wir haben das alte Problem mit einem neuen <b>Ansatz</b> gelöst.<div>Die wirklichen Kosten sind höher als der <b>Ansatz</b>.</div>",
-    "back_example": "<div>We resolved the old problem with a new <b>approach</b>.</div><div><div>The actual cost is higher than the <b>estimate</b>.</div></div>"
+    "front_example": "Wir haben das alte Problem mit einem neuen Ansatz gelöst.Die wirklichen Kosten sind höher als der Ansatz.",
+    "back_example": "We resolved the old problem with a new approach.The actual cost is higher than the estimate."
   },
   {
     "front": "der Aspekt",
@@ -4616,8 +4616,8 @@
     "front": "herstellen",
     "back": "to produce",
     "frequencey": "944",
-    "front_example": "Unsere Fabrik <b>stellt</b> Geschirr <b>her</b>.",
-    "back_example": "Our factory <b>produces </b>crockery."
+    "front_example": "Unsere Fabrik stellt Geschirr her.",
+    "back_example": "Our factory produces crockery."
   },
   {
     "front": "irgendein",
@@ -4693,8 +4693,8 @@
     "front": "wechseln zu",
     "back": "to change to",
     "frequencey": "956",
-    "front_example": "Der Fußballer <b>wechselt zu</b> einem anderen Verein.",
-    "back_example": "The soccer player <b>changes to</b> another club."
+    "front_example": "Der Fußballer wechselt zu einem anderen Verein.",
+    "back_example": "The soccer player changes to another club."
   },
   {
     "front": "weg",
@@ -4824,7 +4824,7 @@
   },
   {
     "front": "erneut",
-    "back": "again, <i>once</i>&nbsp;again",
+    "back": "again, once again",
     "frequencey": "975",
     "front_example": "Im Atomkraftwerk gab es erneut eine Störung.",
     "back_example": "There was a dysfunction at the nuclear power plant again."
@@ -4875,8 +4875,8 @@
     "front": "der Dienst",
     "back": "service, duty",
     "frequencey": "982",
-    "front_example": "Der Verkäufer steht im <b>Dienst</b> seiner Kunden.",
-    "back_example": "The seller is at the <b>service</b> of his customers"
+    "front_example": "Der Verkäufer steht im Dienst seiner Kunden.",
+    "back_example": "The seller is at the service of his customers"
   },
   {
     "front": "erwähnen",
@@ -4924,8 +4924,8 @@
     "front": "üblich",
     "back": "usual, common",
     "frequencey": "989",
-    "front_example": "In Deutschland ist es <b>üblich</b>, sich zur Begrüßung die Hand zu reichen.",
-    "back_example": "In Germany it is <b>common</b> to shake hand in a greeting."
+    "front_example": "In Deutschland ist es üblich, sich zur Begrüßung die Hand zu reichen.",
+    "back_example": "In Germany it is common to shake hand in a greeting."
   },
   {
     "front": "verzichten",
@@ -4959,15 +4959,15 @@
     "front": "aufgeben",
     "back": "to give up",
     "frequencey": "994",
-    "front_example": "Uwe <b>gibt</b> die Arbeit bei seiner alten Firma <b>auf</b>.",
-    "back_example": "Uwe is <b>giving up</b> his job at his old company."
+    "front_example": "Uwe gibt die Arbeit bei seiner alten Firma auf.",
+    "back_example": "Uwe is giving up his job at his old company."
   },
   {
     "front": "der Auftrag",
     "back": "instructions, assignment, job",
     "frequencey": "995",
-    "front_example": "Der <b>Auftrag</b> muss diese Woche noch erledigt werden.",
-    "back_example": "The <b>job</b> has to be done this week."
+    "front_example": "Der Auftrag muss diese Woche noch erledigt werden.",
+    "back_example": "The job has to be done this week."
   },
   {
     "front": "der Baum",
@@ -4980,8 +4980,8 @@
     "front": "betragen",
     "back": "to amount, average",
     "frequencey": "997",
-    "front_example": "Der Zuschuss <b>beträgt</b> etwa 30 Euro.<div>Die Entfernung <b>beträgt</b> vier Meilen.</div>",
-    "back_example": "The subsidy <b>averages</b> about 30 €.<div><div>The distance <b>is</b> four miles.</div></div>"
+    "front_example": "Der Zuschuss beträgt etwa 30 Euro.Die Entfernung beträgt vier Meilen.",
+    "back_example": "The subsidy averages about 30 €.The distance is four miles."
   },
   {
     "front": "die Freude",
@@ -4999,10 +4999,10 @@
   },
   {
     "front": "gesellschaftlich",
-    "back": "social &nbsp; <sup>e.g. to society</sup>",
+    "back": "social   e.g. to society",
     "frequencey": "1001",
-    "front_example": "Vereine übernehmen eine große <b>gesellschaftliche Verantwortung</b>.<div>Der Schauspieler hatte viele <b>gesellschaftliche Verpflichtungen</b>.</div><div></div>",
-    "back_example": "Associations take an important <b>social responsibility</b>.<div>The actor had many <b>social obligations</b>.</div>"
+    "front_example": "Vereine übernehmen eine große gesellschaftliche Verantwortung.Der Schauspieler hatte viele gesellschaftliche Verpflichtungen.",
+    "back_example": "Associations take an important social responsibility.The actor had many social obligations."
   },
   {
     "front": "der Hinweis",
@@ -5022,8 +5022,8 @@
     "front": "irgendwelche (r, s)",
     "back": "some, any",
     "frequencey": "1004",
-    "front_example": "Seid ihr auf <b>irgendwelche</b> Probleme gestoßen?",
-    "back_example": "Have you encountered <b>any</b> problems?"
+    "front_example": "Seid ihr auf irgendwelche Probleme gestoßen?",
+    "back_example": "Have you encountered any problems?"
   },
   {
     "front": "kochen",
@@ -5064,8 +5064,8 @@
     "front": "die Position",
     "back": "position",
     "frequencey": "1010",
-    "front_example": "In seiner <b>Position</b> als Stellvertreter des Präsidenten hat er zu wenig Einfluss auf die Politik.",
-    "back_example": "In his <b>position</b> as deputy president, he has too little influence over policy."
+    "front_example": "In seiner Position als Stellvertreter des Präsidenten hat er zu wenig Einfluss auf die Politik.",
+    "back_example": "In his position as deputy president, he has too little influence over policy."
   },
   {
     "front": "der Schluss",
@@ -5085,8 +5085,8 @@
     "front": "wiederum",
     "back": "in turn, again, on the other hand",
     "frequencey": "1013",
-    "front_example": "Sie mochte die Idee. Ihr Bruder <b>wiederum</b> war dagegen.",
-    "back_example": "<div>She liked the idea. Her brother, <b>in turn</b>, was against it.</div>"
+    "front_example": "Sie mochte die Idee. Ihr Bruder wiederum war dagegen.",
+    "back_example": "She liked the idea. Her brother, in turn, was against it."
   },
   {
     "front": "begründen",
@@ -5120,8 +5120,8 @@
     "front": "festhalten",
     "back": "to hold on to, detain (to hold securely)",
     "frequencey": "1019",
-    "front_example": "Die Verdächtigte wurde zur weiteren Befragung <b>festgehalten</b>.",
-    "back_example": "<div>The suspect was <b>held</b> for further questioning.</div>"
+    "front_example": "Die Verdächtigte wurde zur weiteren Befragung festgehalten.",
+    "back_example": "The suspect was held for further questioning."
   },
   {
     "front": "geraten",
@@ -5176,8 +5176,8 @@
     "front": "verfügen",
     "back": "to order, decree, rule",
     "frequencey": "1028",
-    "front_example": "Der Präsident <b>verfügte</b> den Rückzug der Soldaten.",
-    "back_example": "<div>The president <b>ordered</b> the retreat of the troops.</div>"
+    "front_example": "Der Präsident verfügte den Rückzug der Soldaten.",
+    "back_example": "The president ordered the retreat of the troops."
   },
   {
     "front": "der Wald",
@@ -5260,8 +5260,8 @@
     "front": "[sondern] vielmehr",
     "back": "rather",
     "frequencey": "1042",
-    "front_example": "<div>Die Wände sind nicht weiß, sie sind <b>vielmehr</b> beige.</div>Hier liegt kein finanzielles, <b>sondern vielmehr </b>ein organisatorisches Problem vor.",
-    "back_example": "<div><div>The walls are not white, <b>but</b> <b>rather</b> beige.</div></div>This is not a financial, <b>but rather</b> an organizational problem."
+    "front_example": "Die Wände sind nicht weiß, sie sind vielmehr beige.Hier liegt kein finanzielles, sondern vielmehr ein organisatorisches Problem vor.",
+    "back_example": "The walls are not white, but rather beige.This is not a financial, but rather an organizational problem."
   },
   {
     "front": "vorbereiten",
@@ -5351,8 +5351,8 @@
     "front": "zuständig",
     "back": "appropriate, responsible",
     "frequencey": "1055",
-    "front_example": "Der Produktmanager ist für diesen Bereich <b>zuständig</b>.",
-    "back_example": "<div>The product manager is <b>responsible</b> for this division.</div>"
+    "front_example": "Der Produktmanager ist für diesen Bereich zuständig.",
+    "back_example": "The product manager is responsible for this division."
   },
   {
     "front": "bislang",
@@ -5365,8 +5365,8 @@
     "front": "erheblich",
     "back": "considerable",
     "frequencey": "1057",
-    "front_example": "Das Hochwasser richtete <b>erheblichen</b> Schaden an.",
-    "back_example": "The flood caused <b>considerable</b> damage."
+    "front_example": "Das Hochwasser richtete erheblichen Schaden an.",
+    "back_example": "The flood caused considerable damage."
   },
   {
     "front": "ernst",
@@ -5582,8 +5582,8 @@
     "front": "herrschen",
     "back": "to rule",
     "frequencey": "1089",
-    "front_example": "Im Land <b>herrscht</b> Unruhe.<div>Der König <b>herrschte</b> über ein großes Königreich.</div>",
-    "back_example": "Unrest is <b>ruling</b> the country.<div><div>The king <b>ruled</b> over a great kingdom.</div></div>"
+    "front_example": "Im Land herrscht Unruhe.Der König herrschte über ein großes Königreich.",
+    "back_example": "Unrest is ruling the country.The king ruled over a great kingdom."
   },
   {
     "front": "der Job",
@@ -5603,8 +5603,8 @@
     "front": "die Öffentlichkeit",
     "back": "the public",
     "frequencey": "1092",
-    "front_example": "Jan Hus wurde in aller <b>Öffentlichkeit</b> hingerichtet.<div>Journalisten informieren die <b>Öffentlichkeit</b>.</div>",
-    "back_example": "Jan Hus was executed in <b>public</b>.<div><div>Journalists provide information to the <b>public</b>.</div></div><div><br /></div>"
+    "front_example": "Jan Hus wurde in aller Öffentlichkeit hingerichtet.Journalisten informieren die Öffentlichkeit.",
+    "back_example": "Jan Hus was executed in public.Journalists provide information to the public."
   },
   {
     "front": "schieben",
@@ -5624,8 +5624,8 @@
     "front": "übrigens",
     "back": "by the way",
     "frequencey": "1095",
-    "front_example": "Ich komme <b>übrigens</b> auch mit nach Köln.<div>Mir gefällt <b>übrigens</b> dein neuer Haarschnitt.</div>",
-    "back_example": "<b>By the way</b>, I'm also coming to Cologne.<div><div><b>By the way</b>, I like your new haircut.</div></div>"
+    "front_example": "Ich komme übrigens auch mit nach Köln.Mir gefällt übrigens dein neuer Haarschnitt.",
+    "back_example": "By the way, I'm also coming to Cologne.By the way, I like your new haircut."
   },
   {
     "front": "zufrieden",
@@ -5659,8 +5659,8 @@
     "front": "der Besuch",
     "back": "visit",
     "frequencey": "1100",
-    "front_example": "Wir bekommen am Sonntag <b>Besuch</b>.",
-    "back_example": "On Sunday we're going to receive<b> a visit</b>."
+    "front_example": "Wir bekommen am Sonntag Besuch.",
+    "back_example": "On Sunday we're going to receive a visit."
   },
   {
     "front": "die Energie",
@@ -5673,8 +5673,8 @@
     "front": "erheben",
     "back": "to raise",
     "frequencey": "1102",
-    "front_example": "Er<b> erhob</b> sein Glas und sagte: \"Prost!\"",
-    "back_example": "<div>He <b>raised</b> his glass and said, \"Cheers!\"</div>"
+    "front_example": "Er erhob sein Glas und sagte: \"Prost!\"",
+    "back_example": "He raised his glass and said, \"Cheers!\""
   },
   {
     "front": "die Erklärung",
@@ -5702,7 +5702,7 @@
     "back": "course, rune, race",
     "frequencey": "1106",
     "front_example": "Üblicherweise stoppe ich meine Läufe.",
-    "back_example": "<div>I usually time my runs.</div>"
+    "back_example": "I usually time my runs."
   },
   {
     "front": "der Unterricht",
@@ -5757,8 +5757,8 @@
     "front": "das Amt",
     "back": "office, department, function",
     "frequencey": "1114",
-    "front_example": "Sie nimmt in ihrer Partei ein hohes <b>Amt</b> ein.",
-    "back_example": "She is holding a high <b>office</b> in her party."
+    "front_example": "Sie nimmt in ihrer Partei ein hohes Amt ein.",
+    "back_example": "She is holding a high office in her party."
   },
   {
     "front": "der Anschlag",
@@ -5790,10 +5790,10 @@
   },
   {
     "front": "außerhalb",
-    "back": "outside (<sup>opposite of within</sup>)",
+    "back": "outside (opposite of within)",
     "frequencey": "1119",
-    "front_example": "Wir wohnen <b>außerhalb</b> der Stadt.",
-    "back_example": "We live <b>outside</b> the city."
+    "front_example": "Wir wohnen außerhalb der Stadt.",
+    "back_example": "We live outside the city."
   },
   {
     "front": "beeinflussen",
@@ -5887,7 +5887,7 @@
     "back_example": "The analysis of the results will keep us busy for a long time."
   },
   {
-    "front": "<sup>sich&nbsp;</sup>ansprechen",
+    "front": "sich ansprechen",
     "back": "to address, speak",
     "frequencey": "1135",
     "front_example": "Plötzlich sprach sie mich an, und ich wusste nicht, was ich sagen sollte.",
@@ -5911,8 +5911,8 @@
     "front": "entfernen",
     "back": "to remove, leave",
     "frequencey": "1138",
-    "front_example": "Ich <b>entfernte</b> den Fleck mit Seife und Wasser.",
-    "back_example": "<div>I <b>removed</b> the stain with soap and water.</div>"
+    "front_example": "Ich entfernte den Fleck mit Seife und Wasser.",
+    "back_example": "I removed the stain with soap and water."
   },
   {
     "front": "linke (r, s)",
@@ -6055,7 +6055,7 @@
     "back_example": "Your criticism is a bit excessive."
   },
   {
-    "front": "kümmern <sup>sich </sup>[um etw.]",
+    "front": "kümmern sich [um etw.]",
     "back": "to take care of, be concerned",
     "frequencey": "1159",
     "front_example": "Marius kümmert sich liebevoll um seinen kleinen Sohn.",
@@ -6100,15 +6100,15 @@
     "front": "per",
     "back": "by way of, per",
     "frequencey": "1165",
-    "front_example": "Die Güter wurden <b>per</b> Schiff transportiert.<div>Wir werden Sie unverzüglich <b>per</b> E-Mail kontaktieren.</div>",
-    "back_example": "The goods were transported<b> by</b> ship.<div><div>We will contact you promptly <b>via</b> e-mail.</div></div>"
+    "front_example": "Die Güter wurden per Schiff transportiert.Wir werden Sie unverzüglich per E-Mail kontaktieren.",
+    "back_example": "The goods were transported by ship.We will contact you promptly via e-mail."
   },
   {
     "front": "prägen",
     "back": "to shape, mint",
     "frequencey": "1166",
-    "front_example": "Dieses Erlebnis wird ihn <b>prägen</b>.<div>Die Entscheidung, die wir heute getroffen haben, wird unsere Zukunft <b>prägen</b>.</div>",
-    "back_example": "This experience will <b>shape</b> him.<div><div>The decision we have made today will <b>shape</b> our future.</div></div><div><br /></div>"
+    "front_example": "Dieses Erlebnis wird ihn prägen.Die Entscheidung, die wir heute getroffen haben, wird unsere Zukunft prägen.",
+    "back_example": "This experience will shape him.The decision we have made today will shape our future."
   },
   {
     "front": "der See",
@@ -6128,8 +6128,8 @@
     "front": "sowieso",
     "back": "anyway",
     "frequencey": "1169",
-    "front_example": "<div>Ich werde bleiben; ich habe den letzten Bus<b> sowieso</b> verpasst.</div><div>Ich muss <b>sowieso</b> zur Bank, ich begleite dich ein Stück.</div>",
-    "back_example": "<div>I will stay; I have missed the last bus <b>anyway</b>.</div><div><div>I need to go the bank <b>anyway</b>, I will accompany you part of the way.</div></div>"
+    "front_example": "Ich werde bleiben; ich habe den letzten Bus sowieso verpasst.Ich muss sowieso zur Bank, ich begleite dich ein Stück.",
+    "back_example": "I will stay; I have missed the last bus anyway.I need to go the bank anyway, I will accompany you part of the way."
   },
   {
     "front": "der Typ",
@@ -6433,7 +6433,7 @@
     "back_example": "This is an exhibition of contemporary painters."
   },
   {
-    "front": "bemühen <sup>[sich]</sup>",
+    "front": "bemühen [sich]",
     "back": "to make an effort (strive)",
     "frequencey": "1213",
     "front_example": "Wir bemühen uns um ein besseres Betriebsklima.",
@@ -6735,7 +6735,7 @@
   },
   {
     "front": "der Direktor",
-    "back": "director, headmaster&nbsp;",
+    "back": "director, headmaster ",
     "frequencey": "1256",
     "front_example": "Etwas später wurde Herr Schwab Direktor des Gymnasiums.",
     "back_example": "A little bit later, Mr. Schwab became director of the Gymnasium."
@@ -6944,7 +6944,7 @@
     "back_example": "Representatives of Greenpeace are distributing brochures."
   },
   {
-    "front": "vornehmen <sup>sich</sup>",
+    "front": "vornehmen sich",
     "back": "to plan (not vorstellen or planen or planieren)",
     "frequencey": "1287",
     "front_example": "Rainer nimmt sich vor, seiner Angela endlich einen Heiratsantrag zu machen.",
@@ -8893,8 +8893,8 @@
     "front": "vermuten",
     "back": "to suspect, assume",
     "frequencey": "1571",
-    "front_example": "Ich <b>vermute</b>, der Zug kommt zu spät.",
-    "back_example": "I <b>assume</b> the train is late."
+    "front_example": "Ich vermute, der Zug kommt zu spät.",
+    "back_example": "I assume the train is late."
   },
   {
     "front": "zukommen",
@@ -9205,7 +9205,7 @@
     "back_example": "The supplier can only deliver in three days from now."
   },
   {
-    "front": "begegnen <sup>+ dat</sup>",
+    "front": "begegnen + dat",
     "back": "to meet, come across",
     "frequencey": "1616",
     "front_example": "Auf der Fahrt in meine Heimatstadt begegneten mir viele alte Bekannte.",
@@ -10074,7 +10074,7 @@
   },
   {
     "front": "überwiegend",
-    "back": "predominant&nbsp;",
+    "back": "predominant ",
     "frequencey": "1741",
     "front_example": "Der überwiegende Teil der Erstsemester fährt am Wochenende nach Hause.",
     "back_example": "The majority of the freshmen drives home for the weekend."
@@ -10165,7 +10165,7 @@
   },
   {
     "front": "bedingen",
-    "back": "to cause <sup>as in <i>to determine sg</i></sup>",
+    "back": "to cause as in to determine sg",
     "frequencey": "1754",
     "front_example": "Manche Krankheiten sind erblich bedingt.",
     "back_example": "Some diseases are hereditary caused."
@@ -10174,15 +10174,15 @@
     "front": "die Bestimmung",
     "back": "regulation, purpose, fate",
     "frequencey": "1755",
-    "front_example": "Die <b>Bestimmungen</b> sind gesetzlich festgelegt.",
-    "back_example": "The <b>regulations</b> are established by law."
+    "front_example": "Die Bestimmungen sind gesetzlich festgelegt.",
+    "back_example": "The regulations are established by law."
   },
   {
     "front": "die Botschaft",
     "back": "message, embassy",
     "frequencey": "1756",
-    "front_example": "Die Menschen erwarten eine positive <b>Botschaft</b> von ihrem Präsidenten.",
-    "back_example": "People expect a positive <b>message</b> from their president."
+    "front_example": "Die Menschen erwarten eine positive Botschaft von ihrem Präsidenten.",
+    "back_example": "People expect a positive message from their president."
   },
   {
     "front": "das Brot",
@@ -10356,8 +10356,8 @@
     "front": "der Wille",
     "back": "will",
     "frequencey": "1781",
-    "front_example": "Sandra schafft das, sie hat einen starken <b>Willen</b>.",
-    "back_example": "Sandra can make it, she has a strong <b>will</b>."
+    "front_example": "Sandra schafft das, sie hat einen starken Willen.",
+    "back_example": "Sandra can make it, she has a strong will."
   },
   {
     "front": "angemessen",
@@ -10496,8 +10496,8 @@
     "front": "sprachlich",
     "back": "linguistic",
     "frequencey": "1801",
-    "front_example": "Lieder und Reime fördern die <b>sprachliche</b> Entwicklung von Kindern.",
-    "back_example": "Songs and rhymes promote the <b>linguistic</b> development of children."
+    "front_example": "Lieder und Reime fördern die sprachliche Entwicklung von Kindern.",
+    "back_example": "Songs and rhymes promote the linguistic development of children."
   },
   {
     "front": "unternehmen",
@@ -10655,7 +10655,7 @@
   },
   {
     "front": "der Kauf",
-    "back": "the&nbsp;purchase",
+    "back": "the purchase",
     "frequencey": "1824",
     "front_example": "Das Öffnen der Packung verpflichtet nicht zum Kauf der Ware.",
     "back_example": "Opening the package doesn't obligate to purchase the product."
@@ -10773,7 +10773,7 @@
     "back_example": "The employees have elected a council."
   },
   {
-    "front": "<sup>sich</sup> begeistern",
+    "front": "sich begeistern",
     "back": "to inspire, be enthusiastic",
     "frequencey": "1841",
     "front_example": "Robert begeistert sich für das Ballett.",
@@ -11014,8 +11014,8 @@
     "front": "der Verdacht",
     "back": "suspicion",
     "frequencey": "1876",
-    "front_example": "Der Mann steht <b>unter Verdacht</b>, eine Bank ausgeraubt zu haben.",
-    "back_example": "The man is <b>under suspicion&nbsp;</b>of having robbed a bank."
+    "front_example": "Der Mann steht unter Verdacht, eine Bank ausgeraubt zu haben.",
+    "back_example": "The man is under suspicion of having robbed a bank."
   },
   {
     "front": "vielfältig",
@@ -11032,7 +11032,7 @@
     "back_example": "In Winter, many birds fly to the South."
   },
   {
-    "front": "<sup>sich</sup>&nbsp;wagen",
+    "front": "sich wagen",
     "back": "to dare, risk",
     "frequencey": "1879",
     "front_example": "Ich wage mich nicht, es ihr zu sagen.",
@@ -11214,7 +11214,7 @@
     "back_example": "The highway is financed by taxes."
   },
   {
-    "front": "stützen von etwas <sup>dat</sup>",
+    "front": "stützen von etwas dat",
     "back": "to support, base on",
     "frequencey": "1905",
     "front_example": "Seine wilden Theorien werden von den Tatsachen nicht gestützt.",
@@ -11308,8 +11308,8 @@
     "front": "achten",
     "back": "to respect, pay attention",
     "frequencey": "1918",
-    "front_example": "Urgroßvater wird von allen Familienmitgliedern <b>hoch geachtet</b>.",
-    "back_example": "Great-grandfather is <b>highly respected</b> by all family members."
+    "front_example": "Urgroßvater wird von allen Familienmitgliedern hoch geachtet.",
+    "back_example": "Great-grandfather is highly respected by all family members."
   },
   {
     "front": "der Anschluss",
@@ -11378,8 +11378,8 @@
     "front": "die Einnahme",
     "back": "revenue, income, receipts",
     "frequencey": "1928",
-    "front_example": "Die <b>Einnahmen</b> des heutigen Abends decken nicht die Ausgaben.",
-    "back_example": "The <b>revenues</b> of this evening do not cover the expenses."
+    "front_example": "Die Einnahmen des heutigen Abends decken nicht die Ausgaben.",
+    "back_example": "The revenues of this evening do not cover the expenses."
   },
   {
     "front": "die Erkrankung",
@@ -11481,7 +11481,7 @@
   },
   {
     "front": "der Wechsel",
-    "back": "the change <sup>switch</sup>",
+    "back": "the change switch",
     "frequencey": "1945",
     "front_example": "Mit dem Wechsel der Körperfarbe kann sich ein Chamäleon tarnen.",
     "back_example": "With the change of body color a chameleon can camouflage."
@@ -11756,8 +11756,8 @@
     "front": "der Zeitraum",
     "back": "period of time",
     "frequencey": "1985",
-    "front_example": "<b>In einem Zeitraum </b>von einer Woche muss Paul aus seiner Wohnung ausziehen.",
-    "back_example": "<b>Over a period</b> of<b> </b>one week Paul has to move out of his apartment."
+    "front_example": "In einem Zeitraum von einer Woche muss Paul aus seiner Wohnung ausziehen.",
+    "back_example": "Over a period of one week Paul has to move out of his apartment."
   },
   {
     "front": "zitieren",
@@ -12307,7 +12307,7 @@
   },
   {
     "front": "der Gebrauch",
-    "back": "the&nbsp;use",
+    "back": "the use",
     "frequencey": "2067",
     "front_example": "Vor Gebrauch schütteln!",
     "back_example": "Shake well before use!"
@@ -12433,7 +12433,7 @@
   },
   {
     "front": "die Taste",
-    "back": "key, button <sup>from keyboard, not too big</sup>",
+    "back": "key, button from keyboard, not too big",
     "frequencey": "2085",
     "front_example": "Ich habe aus Versehen die falsche Taste gedrückt.",
     "back_example": "I accidentally pressed the wrong button."
@@ -12608,7 +12608,7 @@
   },
   {
     "front": "das Rennen",
-    "back": "race <sup>running, etc</sup>",
+    "back": "race running, etc",
     "frequencey": "2110",
     "front_example": "Nach dem Rennen findet die Siegerehrung statt.",
     "back_example": "After the race there is an awards ceremony."
@@ -12720,7 +12720,7 @@
   },
   {
     "front": "das Viertel",
-    "back": "quarter (<i>also</i> district)",
+    "back": "quarter (also district)",
     "frequencey": "2128",
     "front_example": "In diesem Viertel sind die Mieten ziemlich teuer.",
     "back_example": "In this district, rents are very expensive."
@@ -12755,7 +12755,7 @@
   },
   {
     "front": "anstellen",
-    "back": "to employ, line up, get into mischief, lock <sup>a bike</sup>",
+    "back": "to employ, line up, get into mischief, lock a bike",
     "frequencey": "2133",
     "front_example": "Stellt keine Dummheiten an!",
     "back_example": "Don't do anything stupid!"
@@ -12776,7 +12776,7 @@
   },
   {
     "front": "bedenken",
-    "back": "to consider [as in <i>thinking about</i>]",
+    "back": "to consider [as in thinking about]",
     "frequencey": "2136",
     "front_example": "Viola bedenkt ihre Lage.",
     "back_example": "Viola considers her position."
@@ -12790,7 +12790,7 @@
   },
   {
     "front": "bewirken",
-    "back": "to cause&nbsp;<sup>as in <i>to have an effect of</i></sup>",
+    "back": "to cause as in to have an effect of",
     "frequencey": "2138",
     "front_example": "Das Medikament bewirkt eine baldige Besserung.",
     "back_example": "The drug causes a speedy recovery."
@@ -12811,14 +12811,14 @@
   },
   {
     "front": "das Erlebnis",
-    "back": "experience (as in <i>having experienced</i>)",
+    "back": "experience (as in having experienced)",
     "frequencey": "2141",
     "front_example": "Sein erster Zahnarzttermin blieb ihm ein unvergessliches Erlebnis.",
     "back_example": "His first appointment with the dentist was an unforgettable experience."
   },
   {
     "front": "gewöhnlich",
-    "back": "usual, usually&nbsp;",
+    "back": "usual, usually ",
     "frequencey": "2142",
     "front_example": "Er kommt gewöhnlich zu spät.",
     "back_example": "He usually comes too late."
@@ -12971,14 +12971,14 @@
     "back_example": "We do not have a TV connection, because we do not like to watch TV anyway."
   },
   {
-    "front": "im <u>Verlauf</u>&nbsp;<sup>der</sup>&nbsp;des Tages",
-    "back": "in the <u>course</u> of the day",
+    "front": "im Verlauf der des Tages",
+    "back": "in the course of the day",
     "frequencey": "2164",
     "front_example": "Das Päckchen wird im Verlauf des Tages eintreffen.",
     "back_example": "The package will arrive in the course of the day."
   },
   {
-    "front": "<sup>sich&nbsp;</sup>verlieben",
+    "front": "sich verlieben",
     "back": "to fall in love",
     "frequencey": "2165",
     "front_example": "Paul hat sich in Paula verliebt.",
@@ -12999,8 +12999,8 @@
     "back_example": "Cigarettes are expensive and that's a good thing."
   },
   {
-    "front": "zukünftig <sup>adj</sup>",
-    "back": "future<sup>adj</sup",
+    "front": "zukünftig adj",
+    "back": "futureadj</sup",
     "frequencey": "2168",
     "front_example": "Zukünftige Generationen werden sicherlich alles besser machen.",
     "back_example": "Future generations will surely make everything better."
@@ -13286,11 +13286,11 @@
     "back_example": "Ulla's grief was enorm."
   },
   {
-    "front": "überlassen <sup>+ dat</sup>",
+    "front": "überlassen + dat",
     "back": "to leave",
     "frequencey": "2214",
-    "front_example": "Ich überlasse<i> dir</i> die Entscheidung.",
-    "back_example": "I leave the decision <i>to you</i>."
+    "front_example": "Ich überlasse dir die Entscheidung.",
+    "back_example": "I leave the decision to you."
   },
   {
     "front": "unterliegen",
@@ -13406,7 +13406,7 @@
   },
   {
     "front": "der Außenminister",
-    "back": "minister of foreign affairs&nbsp;",
+    "back": "minister of foreign affairs ",
     "frequencey": "2231",
     "front_example": "Der deutsche Außenminister ist auf dem Weg nach Kasachstan.",
     "back_example": "The German foreign minister is on his way to Kazakhstan."
@@ -13436,15 +13436,15 @@
     "front": "der Bescheid",
     "back": "information, reply, the ok",
     "frequencey": "2235",
-    "front_example": "Ich habe <b>den Bescheid</b> noch nicht bekommen.",
-    "back_example": "I still have not received<b> the reply</b>."
+    "front_example": "Ich habe den Bescheid noch nicht bekommen.",
+    "back_example": "I still have not received the reply."
   },
   {
-    "front": "bezüglich <sup>+ dat</sup>",
+    "front": "bezüglich + dat",
     "back": "regarding",
     "frequencey": "2236",
-    "front_example": "Wir wenden uns an Sie<b> bezüglich</b> <b>ihrer</b> Bewerbung.",
-    "back_example": "We turn to you <b>regarding</b> <b>your</b> application."
+    "front_example": "Wir wenden uns an Sie bezüglich ihrer Bewerbung.",
+    "back_example": "We turn to you regarding your application."
   },
   {
     "front": "die Blume",
@@ -13569,22 +13569,22 @@
     "front": "hierzu",
     "back": "with it, concerning this, about",
     "frequencey": "2254",
-    "front_example": "Ich habe <b>hierzu</b> nichts zu sagen.",
-    "back_example": "I have nothing to say <b>about this</b>."
+    "front_example": "Ich habe hierzu nichts zu sagen.",
+    "back_example": "I have nothing to say about this."
   },
   {
     "front": "der Hinblick",
     "back": "the view",
     "frequencey": "2255",
-    "front_example": "Die Unzufriedenheit der Bürger ist <b>im Hinblick</b> <b>auf</b> die politische Situation verständlich.",
+    "front_example": "Die Unzufriedenheit der Bürger ist im Hinblick auf die politische Situation verständlich.",
     "back_example": "The discontent of citizens (with regard to)(in view of) the political situation is understandable."
   },
   {
     "front": "indes",
     "back": "meanwhile, however",
     "frequencey": "2256",
-    "front_example": "Kritiker warnen <b>indes</b> vor möglichen Folgen.",
-    "back_example": "Critics warn, <b>however</b>, about the possible effects."
+    "front_example": "Kritiker warnen indes vor möglichen Folgen.",
+    "back_example": "Critics warn, however, about the possible effects."
   },
   {
     "front": "das Individuum",
@@ -13651,10 +13651,10 @@
   },
   {
     "front": "objektiv",
-    "back": "objective <sup>adj</sup>, objectively ",
+    "back": "objective adj, objectively ",
     "frequencey": "2266",
-    "front_example": "<b>Objektiv gesehen</b> hat sie sicherlich Recht.",
-    "back_example": "<b>Objectively</b> she certainly is right."
+    "front_example": "Objektiv gesehen hat sie sicherlich Recht.",
+    "back_example": "Objectively she certainly is right."
   },
   {
     "front": "die Opposition",
@@ -13721,7 +13721,7 @@
   },
   {
     "front": "die Tendenz",
-    "back": "trend (as in <i>direction</i>), bias",
+    "back": "trend (as in direction), bias",
     "frequencey": "2277",
     "front_example": "Es ist eine positive Tendenz zu verzeichnen.",
     "back_example": "There can be charted a positive trend."
@@ -13734,7 +13734,7 @@
     "back_example": "When will the training take place?"
   },
   {
-    "front": "sich<sup> (akk) </sup>+ [etw<sup> (akk)</sup>] &nbsp;+ trauen",
+    "front": "sich (akk) + [etw (akk)]  + trauen",
     "back": "to trust, dare to",
     "frequencey": "2279",
     "front_example": "Der kleine Max traut sich nicht, ins Wasser zu springen.",
@@ -13772,8 +13772,8 @@
     "front": "die Versorgung",
     "back": "the supply / supplies, the care",
     "frequencey": "2284",
-    "front_example": "Wir müssen sicherstellen, dass wir genügend <b>Versorgung</b> haben.",
-    "back_example": "We must make sure we have enough <b>supplies.</b>"
+    "front_example": "Wir müssen sicherstellen, dass wir genügend Versorgung haben.",
+    "back_example": "We must make sure we have enough supplies."
   },
   {
     "front": "vorwiegend",
@@ -13784,17 +13784,17 @@
   },
   {
     "front": "der Wandel",
-    "back": "the change <sup>[as in \"times change\"]</sup>",
+    "back": "the change [as in \"times change\"]",
     "frequencey": "2287",
     "front_example": "Die Stadt macht einen Wandel durch.",
     "back_example": "The city is undergoing a change."
   },
   {
-    "front": "wehren (sich <sup>(akk)</sup>)",
+    "front": "wehren (sich (akk))",
     "back": "to defend oneself",
     "frequencey": "2288",
-    "front_example": "<b>Wehr dich</b>, wenn du ungerecht behandelt wirst!",
-    "back_example": "<b>Defend yourself </b>if you are treated unfairly!"
+    "front_example": "Wehr dich, wenn du ungerecht behandelt wirst!",
+    "back_example": "Defend yourself if you are treated unfairly!"
   },
   {
     "front": "weisen",
@@ -13821,8 +13821,8 @@
     "front": "zufolge + dat.",
     "back": "according to",
     "frequencey": "2292",
-    "front_example": "<i>Den Umfragen zufolge</i> sind 45% der Deutschen dagegen.",
-    "back_example": "<i>According to the polls</i>  45% of Germans are against it."
+    "front_example": "Den Umfragen zufolge sind 45% der Deutschen dagegen.",
+    "back_example": "According to the polls  45% of Germans are against it."
   },
   {
     "front": "zugehen",
@@ -13881,18 +13881,18 @@
     "back_example": "The extent of the disaster is unimaginable."
   },
   {
-    "front": "sich <sup>akk </sup>&nbsp;+&nbsp;aussuchen",
+    "front": "sich akk  + aussuchen",
     "back": "to choose",
     "frequencey": "2301",
-    "front_example": "Die Farbe kann man <b>sich aussuchen</b>.",
-    "back_example": "The color can be <b>chosen</b>."
+    "front_example": "Die Farbe kann man sich aussuchen.",
+    "back_example": "The color can be chosen."
   },
   {
-    "front": "<span style=\"color:olive\">ausziehen</span>, ausziehen [+ sich <sup>akk</sup>]",
-    "back": "<span style=\"color:olive\">to move out</span>, to take off (clothes)",
+    "front": "ausziehen, ausziehen [+ sich akk]",
+    "back": "to move out, to take off (clothes)",
     "frequencey": "2302",
-    "front_example": "Nasse Strümpfe sollte man <b>ausziehen</b>, damit man sich nicht erkältet.<div><br /></div><div>Der Mann kam her und begann, <b>mich auszuziehen</b>.</div>",
-    "back_example": "Wet socks should be<b> taken off</b>, so that one won't catch a cold.<div><br /></div><div>The man came and started <b>undressing</b> <b>me</b>.</div>"
+    "front_example": "Nasse Strümpfe sollte man ausziehen, damit man sich nicht erkältet.Der Mann kam her und begann, mich auszuziehen.",
+    "back_example": "Wet socks should be taken off, so that one won't catch a cold.The man came and started undressing me."
   },
   {
     "front": "die Begründung",
@@ -14213,8 +14213,8 @@
     "front": "ehe",
     "back": "before",
     "frequencey": "2349",
-    "front_example": "<b>Ehe</b> ich ihn aufhalten konnte, war er verschwunden.",
-    "back_example": "<b>Before</b> I could stop him, he was gone."
+    "front_example": "Ehe ich ihn aufhalten konnte, war er verschwunden.",
+    "back_example": "Before I could stop him, he was gone."
   },
   {
     "front": "einbauen",
@@ -14232,7 +14232,7 @@
   },
   {
     "front": "ernsthaft",
-    "back": "serious, seriously&nbsp;",
+    "back": "serious, seriously ",
     "frequencey": "2352",
     "front_example": "Ich mache mir ernsthafte Sorgen.",
     "back_example": "I'm seriously worried."
@@ -14343,7 +14343,7 @@
     "back_example": "She has a good qualification for the job."
   },
   {
-    "front": "raten (+ jemande<b>m</b>.)",
+    "front": "raten (+ jemandem.)",
     "back": "to advise, guess",
     "frequencey": "2369",
     "front_example": "Ich rate dir, noch einmal darüber nachzudenken.",
@@ -14400,7 +14400,7 @@
   },
   {
     "front": "der Trend",
-    "back": "trend (as in <i>fashion</i>)",
+    "back": "trend (as in fashion)",
     "frequencey": "2377",
     "front_example": "Ein neuer Trend in der Mode kommt auf.",
     "back_example": "A new trend in fashion comes up."
@@ -14479,7 +14479,7 @@
     "front": "abstimmen",
     "back": "to vote, coordinate",
     "frequencey": "2388",
-    "front_example": "Wir müssen unsere Arbeitszeiten besser <b>aufeinander abstimmen</b>.",
+    "front_example": "Wir müssen unsere Arbeitszeiten besser aufeinander abstimmen.",
     "back_example": "We need to coordinate better our work times."
   },
   {
@@ -14493,7 +14493,7 @@
     "front": "anregen",
     "back": "to encourage, suggest, stimulate",
     "frequencey": "2391",
-    "front_example": "Schwarzer Tee <b>regt</b> die Lebensgeister <b>an</b>.",
+    "front_example": "Schwarzer Tee regt die Lebensgeister an.",
     "back_example": "Black tea stimulates your spirits."
   },
   {
@@ -14574,7 +14574,7 @@
     "back_example": "His calculations are wrong."
   },
   {
-    "front": "bereiten [+dat]&nbsp;",
+    "front": "bereiten [+dat] ",
     "back": "to make, cause",
     "frequencey": "2403",
     "front_example": "Mein Freund bereitete mir eine große Freude, als er mich ins Theater einlud.",
@@ -14694,7 +14694,7 @@
   },
   {
     "front": "herzlich",
-    "back": "cordial, warm, from the heart&nbsp;",
+    "back": "cordial, warm, from the heart ",
     "frequencey": "2420",
     "front_example": "Herzlich willkommen!",
     "back_example": "A warm welcome!"
@@ -14704,7 +14704,7 @@
     "back": "for this",
     "frequencey": "2421",
     "front_example": "Hierfür habe ich keine Verwendung.",
-    "back_example": "I have no use <b>for this</b>."
+    "back_example": "I have no use for this."
   },
   {
     "front": "die Hose",
@@ -14722,7 +14722,7 @@
   },
   {
     "front": "das Kapital",
-    "back": "capital <sup>(~ money)</sup>",
+    "back": "capital (~ money)",
     "frequencey": "2424",
     "front_example": "Das Unternehmen verfügt nur über geringes Kapital.",
     "back_example": "The company has only small capital."
@@ -14785,7 +14785,7 @@
   },
   {
     "front": "rechtzeitig",
-    "back": "punctual, in&nbsp;[right]&nbsp;time",
+    "back": "punctual, in [right] time",
     "frequencey": "2433",
     "front_example": "Ich bin rechtzeitig angekommen.",
     "back_example": "I arrived in time."
@@ -14970,7 +14970,7 @@
     "back": "intrusion, interference",
     "frequencey": "2460",
     "front_example": "Die Verletzung des Postgeheimnisses ist ein Eingriff in die Privatsphäre.",
-    "back_example": "The violation of postal secrecy is an&nbsp;intrusion&nbsp;on privacy."
+    "back_example": "The violation of postal secrecy is an intrusion on privacy."
   },
   {
     "front": "der Einwohner",
@@ -15117,7 +15117,7 @@
     "back": "endless, infinite",
     "frequencey": "2483",
     "front_example": "Das Weltall ist unendlich.",
-    "back_example": "The universe is infinite.<div>This book is endless.</div>"
+    "back_example": "The universe is infinite.This book is endless."
   },
   {
     "front": "die Verfassung",
@@ -15240,13 +15240,13 @@
   },
   {
     "front": "ausdrücklich",
-    "back": "explicit, explicitly&nbsp;",
+    "back": "explicit, explicitly ",
     "frequencey": "2501",
     "front_example": "Ich habe doch ausdrücklich gesagt, dass ich deine CD nicht habe.",
     "back_example": "I told you explicitly that I do not have your CD."
   },
   {
-    "front": "auswirken (sich) (auf etw<sup>akk</sup>)",
+    "front": "auswirken (sich) (auf etwakk)",
     "back": "to have an effect",
     "frequencey": "2502",
     "front_example": "Sonnenschein wirkt sich positiv auf die Stimmung aus.",
@@ -15285,7 +15285,7 @@
     "back": "to assess, judge, rate",
     "frequencey": "2507",
     "front_example": "Die Arbeit ist gut bewertet worden.",
-    "back_example": "The work has been judged as good.<div>You must rate your eBay purchase.&nbsp;</div>"
+    "back_example": "The work has been judged as good.You must rate your eBay purchase. "
   },
   {
     "front": "die Bibel",
@@ -15320,7 +15320,7 @@
     "back": "to cover",
     "frequencey": "2512",
     "front_example": "Die Einnahmen decken genau die Kosten.",
-    "back_example": "The revenue just covers the costs.<div>I cover you with a blanket.&nbsp;</div>"
+    "back_example": "The revenue just covers the costs.I cover you with a blanket. "
   },
   {
     "front": "differenzieren",
@@ -15380,7 +15380,7 @@
   },
   {
     "front": "die Entstehung",
-    "back": "origin, creation&nbsp;",
+    "back": "origin, creation ",
     "frequencey": "2521",
     "front_example": "Was weiß man über die Entstehung der Erde?",
     "back_example": "What is known about the origin of the earth?"
@@ -15499,7 +15499,7 @@
   },
   {
     "front": "der Kindergarten",
-    "back": "the kindergarten&nbsp;",
+    "back": "the kindergarten ",
     "frequencey": "2538",
     "front_example": "Lucy geht schon in den Kindergarten.",
     "back_example": "Lucy is already at the nursery school."
@@ -15662,8 +15662,8 @@
     "front": "die Scheibe",
     "back": "disc, slice, (glass) pane",
     "frequencey": "2563",
-    "front_example": "Die Erde ist keine Scheibe.<div>Ich will eine Scheibe, bitte.&nbsp;</div>",
-    "back_example": "The earth is not a disc.<div>I want a slice, please.&nbsp;</div>"
+    "front_example": "Die Erde ist keine Scheibe.Ich will eine Scheibe, bitte. ",
+    "back_example": "The earth is not a disc.I want a slice, please. "
   },
   {
     "front": "senden",
@@ -16283,7 +16283,7 @@
   },
   {
     "front": "die Zeile",
-    "back": "line (as in <i>pickup lines</i>)",
+    "back": "line (as in pickup lines)",
     "frequencey": "2653",
     "front_example": "Übersetzer werden pro Zeile bezahlt.",
     "back_example": "Translators are paid per line."
@@ -16437,7 +16437,7 @@
   },
   {
     "front": "erwidern",
-    "back": "to reply (against a good argument) &nbsp;",
+    "back": "to reply (against a good argument)  ",
     "frequencey": "2675",
     "front_example": "Darauf kann ich nichts erwidern.",
     "back_example": "I can't reply to this."
@@ -16845,7 +16845,7 @@
     "front": "absetzen",
     "back": "to take off, dismiss",
     "frequencey": "2733",
-    "front_example": "Vor dem Duschen <b>setzt</b> man besser die Brille <b>ab</b>.",
+    "front_example": "Vor dem Duschen setzt man besser die Brille ab.",
     "back_example": "Before taking a shower one should better take off the glasses."
   },
   {
@@ -17055,8 +17055,8 @@
     "front": "geistlich",
     "back": "religious, spiritual",
     "frequencey": "2765",
-    "front_example": "Der <i style=\"\">Pfarrer</i> gab dem Paar seinen geistlichen Segen.",
-    "back_example": "The <i>priest</i> gave the couple his spiritual blessings."
+    "front_example": "Der Pfarrer gab dem Paar seinen geistlichen Segen.",
+    "back_example": "The priest gave the couple his spiritual blessings."
   },
   {
     "front": "das Gen",
@@ -17329,7 +17329,7 @@
     "back": "to register, sign up",
     "frequencey": "2804",
     "front_example": "Wir melden uns im Sufi Camp sobald wir ankommen.",
-    "back_example": "We will register in the Sufi camp as soon as we arrive.&nbsp;"
+    "back_example": "We will register in the Sufi camp as soon as we arrive. "
   },
   {
     "front": "aufzeigen",
@@ -17878,8 +17878,8 @@
     "back_example": "How long can you endure that?"
   },
   {
-    "front": "beauftragen [mit <i>etwas</i>]",
-    "back": "to give sb the task of doing <i>sth</i>, hire (a firm)",
+    "front": "beauftragen [mit etwas]",
+    "back": "to give sb the task of doing sth, hire (a firm)",
     "frequencey": "2885",
     "front_example": "Herr Töpfer ist mit der Organisation des Festes beauftragt.",
     "back_example": "Mr. Potter is given the task of organizing the festival."
@@ -18245,8 +18245,8 @@
     "front": "reizen",
     "back": "to annoy, provoke, tempt",
     "frequencey": "2940",
-    "front_example": "An dieser Arbeit <b>reizt</b> mich die Aussicht auf Dienstreisen.",
-    "back_example": "In this work, the prospect on business trips <b>tempts</b> me."
+    "front_example": "An dieser Arbeit reizt mich die Aussicht auf Dienstreisen.",
+    "back_example": "In this work, the prospect on business trips tempts me."
   },
   {
     "front": "der Saal",
@@ -18340,7 +18340,7 @@
     "back_example": "But this is a bad translation."
   },
   {
-    "front": "unzählig (not <i>uncountable</i>)",
+    "front": "unzählig (not uncountable)",
     "back": "countless",
     "frequencey": "2954",
     "front_example": "Nach unzähligen Versuchen erreichte er Miriam am Telefon.",
@@ -18397,10 +18397,10 @@
   },
   {
     "front": "die Vorlage",
-    "back": "template, presentation, submission&nbsp;",
+    "back": "template, presentation, submission ",
     "frequencey": "2962",
-    "front_example": "Die Bücher werden gegen <b>Vorlage</b> des Benutzerausweises ausgegeben.<div><br><div>Es stehen verschiedene <b>Vorlagen</b> zur Verfügung, um typische Dokumente zu erstellen.</div></div><div><br></div><div>Die Frist für die <b>Vorlage</b> von Beweisen endet heute.<br></div>",
-    "back_example": "The books will be issued on <b>presentation</b> of a library card.<div><br><div>Various <b>templates</b> are available to create common documents.<br></div></div><div><br></div><div>The deadline for the <b>submission</b> of evidence ends today.<br></div>"
+    "front_example": "Die Bücher werden gegen Vorlage des Benutzerausweises ausgegeben.Es stehen verschiedene Vorlagen zur Verfügung, um typische Dokumente zu erstellen.Die Frist für die Vorlage von Beweisen endet heute.",
+    "back_example": "The books will be issued on presentation of a library card.Various templates are available to create common documents.The deadline for the submission of evidence ends today."
   },
   {
     "front": "die Wärme",
@@ -19020,7 +19020,7 @@
   },
   {
     "front": "abbilden",
-    "back": "to copy, portray [in an image]&nbsp;",
+    "back": "to copy, portray [in an image] ",
     "frequencey": "3051",
     "front_example": "Die Pflanzen sind naturgetreu abgebildet.",
     "back_example": "The plants are copied realistically."
@@ -19041,7 +19041,7 @@
   },
   {
     "front": "abspielen",
-    "back": "to play [a tape/song]&nbsp;",
+    "back": "to play [a tape/song] ",
     "frequencey": "3054",
     "front_example": "Die Polizei spielt das Tonband vor dem Zeugen ab.",
     "back_example": "The police plays the tape in front of the witness."
@@ -19468,7 +19468,7 @@
   },
   {
     "front": "die Partie",
-    "back": "game, <i>partida de ...</i>",
+    "back": "game, partida de ...",
     "frequencey": "3117",
     "front_example": "Spielen wir noch eine Partie Schach?",
     "back_example": "Are we going to play another game of chess?"
@@ -19482,7 +19482,7 @@
   },
   {
     "front": "die Reflexion",
-    "back": "reflection (<i>as in</i> thinking)",
+    "back": "reflection (as in thinking)",
     "frequencey": "3119",
     "front_example": "Eine genaue Reflexion des Problems ist dringend nötig.",
     "back_example": "An accurate reflection of the problem is urgently needed."
@@ -19671,7 +19671,7 @@
   },
   {
     "front": "der Zins",
-    "back": "interest (<i>banking</i>)",
+    "back": "interest (banking)",
     "frequencey": "3147",
     "front_example": "Bei dieser Investition kann man vier Prozent Zinsen erwarten.",
     "back_example": "With this investment, you can expect four percent interest."
@@ -19720,7 +19720,7 @@
   },
   {
     "front": "anwesend",
-    "back": "present (as <i>to be present</i>)",
+    "back": "present (as to be present)",
     "frequencey": "3154",
     "front_example": "Alle Gäste sind anwesend.",
     "back_example": "All guests are present."
@@ -25889,70 +25889,70 @@
     "front": "Schwager, Schwägerin",
     "back": "brother-in-law, sister-in-law",
     "frequencey": "#3001",
-    "front_example": "<div><div><div><div><div><div>Ich habe einen&nbsp;<b>Schwager</b>&nbsp;namens Bobo – das ist eine ganz andere Geschichte.</div></div></div></div></div></div>",
-    "back_example": "I have a <b>brother-in-law</b> named Bobo -- which is a whole other story."
+    "front_example": "Ich habe einen Schwager namens Bobo – das ist eine ganz andere Geschichte.",
+    "back_example": "I have a brother-in-law named Bobo -- which is a whole other story."
   },
   {
     "front": "der Darm",
     "back": "the intestines",
-    "frequencey": "2500-1",
-    "front_example": "",
-    "back_example": ""
+    "frequencey": "2500",
+    "front_example": "Wegen seines empfindlichen Darms isst er kein scharfes Essen.",
+    "back_example": "Because of his sensitive bowel, he did not eat spicy food."
   },
   {
     "front": "geschmeidig",
     "back": "smooth",
-    "frequencey": "2500-1",
-    "front_example": "<div><div><div>Mein Haar ist <b>geschmeidig</b> und seidig glänzend.</div></div></div><div>Geschmeidig! ;)</div>",
-    "back_example": "My hair is <b>smooth</b> and silky.<div>Smooth! ;)</div>"
+    "frequencey": "2500",
+    "front_example": "Mein Haar ist geschmeidig und seidig glänzend.Geschmeidig! ;)",
+    "back_example": "My hair is smooth and silky.Smooth! ;)"
   },
   {
     "front": "der Wahn",
     "back": "delusion",
-    "frequencey": "2724-1",
+    "frequencey": "2724",
     "front_example": "Er lebt in einem Wahn...",
     "back_example": "He lives in a delusion..."
   },
   {
     "front": "der + pl Versager, die Versagen",
     "back": "the loser",
-    "frequencey": "3050-3",
-    "front_example": "Haarwaschen ist für <b>Versager</b>",
-    "back_example": "Washing your hair is for&nbsp;<b>losers</b>"
+    "frequencey": "3050",
+    "front_example": "Haarwaschen ist für Versager",
+    "back_example": "Washing your hair is for losers"
   },
   {
     "front": "verschachteln, die Verschachtelung",
     "back": "to nest, nesting",
-    "frequencey": "3000.1",
-    "front_example": "Auch die <b>Verschachtelung</b> verschiedener Funktionen ist möglich.",
-    "back_example": "<div><div><div>You can also <b>nest</b> functions within functions.</div></div></div>"
+    "frequencey": "3000",
+    "front_example": "Auch die Verschachtelung verschiedener Funktionen ist möglich.",
+    "back_example": "You can also nest functions within functions."
   },
   {
     "front": "erobern",
     "back": "to conquer",
-    "frequencey": "3000.2",
+    "frequencey": "3000",
     "front_example": "Trotzdem haben die Europäer später die Welt erobert, nicht die Chinesen.",
     "back_example": "Nevertheless, the Europeans went on to conquer the globe and not the Chinese."
   },
   {
     "front": "die Großzügigkeit",
     "back": "generosity",
-    "frequencey": "3050-2",
-    "front_example": "Handelsaktivitäten werden wieder einmal als Akt der&nbsp;<b>Großzügigkeit</b>&nbsp;dargestellt.",
-    "back_example": "Once again, commercial concerns are being portrayed as acts of <b>generosity</b>."
+    "frequencey": "3050",
+    "front_example": "Handelsaktivitäten werden wieder einmal als Akt der Großzügigkeit dargestellt.",
+    "back_example": "Once again, commercial concerns are being portrayed as acts of generosity."
   },
   {
     "front": "die Genesung",
     "back": "the recovery",
-    "frequencey": "3050-1",
-    "front_example": "",
-    "back_example": ""
+    "frequencey": "3050",
+    "front_example": "Nach der Operation erfolgte die Genesung des Patienten schnell.",
+    "back_example": "After the operation, the patient made a quick recovery."
   },
   {
     "front": "die Vorbeugung",
     "back": "the Prevention",
-    "frequencey": "3000-2",
+    "frequencey": "3000",
     "front_example": "Hygiene ist wichtig für die Vorbeugung von Krankheiten.",
-    "back_example": "<div><div><div>Hygiene is important for the prevention of illnesses.</div></div></div>"
+    "back_example": "Hygiene is important for the prevention of illnesses."
   }
 ]
