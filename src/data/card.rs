@@ -7,6 +7,7 @@ pub struct Card{
     pub front: String,
     pub back: String,
     pub frequencey: u32,
+    // pub frequencey: String,
     pub front_example: String,
     pub back_example: String
 }

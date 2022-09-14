@@ -63,13 +63,24 @@ pub fn app() -> Html {
         use_effect_with_deps( move |_| {
             // let cards = cards.clone();
             wasm_bindgen_futures::spawn_local(async move {
-                let fetched_cards : Vec<Card> = Request::get("assets/cards.json")
+                // let fetched_cards = Request::get("http://localhost:8081/german.json")
+                //     .send()
+                //     .await
+                //     .unwrap()
+                //     .text()
+                //     .await
+                //     .unwrap();
+
+                // log!(fetched_cards);
+                let fetched_cards : Vec<Card> = Request::get("http://localhost:8081/german.json")
                     .send()
                     .await
                     .unwrap()
                     .json()
                     .await
                     .unwrap();
+                
+                log!(serde_json::to_string_pretty(&fetched_cards).unwrap());
                 // cards.set(fetched_cards);
                 // let v = vec![1,2,3];
                 // log!(v);
