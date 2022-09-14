@@ -1,5 +1,6 @@
 use super::{card::Card, cards_generator::CardsGenerator};
 
+#[derive(PartialEq)]
 pub struct RandomCardsGenerator{
     cards: Vec<Card>,
     cards_no_to_generate: u32,
@@ -31,4 +32,10 @@ impl CardsGenerator for RandomCardsGenerator{
         res
     }
 
+}
+
+impl Clone for RandomCardsGenerator{
+    fn clone(&self) -> Self {
+        *self
+    }
 }

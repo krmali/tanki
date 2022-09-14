@@ -9,6 +9,8 @@ mod data;
 use components::typing::Typing;
 use data::card::Card;
 
+use crate::data::{cards_generator_provider::CardsGeneratorProvider, random_cards_generator::RandomCardsGenerator};
+
 // pub type Welcome = Vec<WelcomeElement>;
 
 // #[derive(Serialize, Deserialize)]
@@ -100,5 +102,28 @@ pub fn app() -> Html {
                 {*wpm_state}
             </div>
         </div>
+        )
+}
+
+#[function_component(TypingWrapper)]
+pub fn typing_wrapper() -> Html {
+    // let cards_generator = use_context::<CardsGeneratorProvider<RandomCardsGenerator>>();
+    let wpm_state : UseStateHandle<f64> = use_state(|| 0.0);
+    let text = "The quick brown fox jumps over the lazy dog";
+
+    let wpm_callback = {
+        let wpm_state = wpm_state.clone();
+        Callback::from(move |wpm: f64| {
+            wpm_state.set(wpm);
+    })};
+
+
+    html!(
+        <CardsGeneratorProvider<RandomCardsGenerator>>
+            <Typing text={text} callback={wpm_callback}/>
+            <div>
+                {*wpm_state}
+            </div>
+        </CardsGeneratorProvider<RandomCardsGenerator>>
         )
 }
