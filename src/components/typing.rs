@@ -1,13 +1,18 @@
 use chrono::prelude::*;
 
+use crate::data::card::Card;
+
 use super::letter::{Letter, LetterStatus};
 use gloo::console::log;
 use yew::prelude::*;
 
+#[allow(non_camel_case_types)]
 #[derive(Properties, PartialEq)]
 pub struct TypingProps {
-    pub text: String,
-    pub callback: Callback<f64>,
+    pub cards: Vec<Card>,
+    pub wpm_callback: Callback<f64>,
+    pub card_index_callback: Callback<usize>,
+    pub show_diacritic_marks: bool,
 }
 
 // impl Default for TypingProps {
@@ -33,17 +38,30 @@ pub fn calculate_wpm(start: DateTime<Utc>, text: &str, vec: &Vec<LetterStatus>) 
         - (errors_no / elapsed_duration_millis) * (60000_f64)
 }
 
+
 #[function_component(Typing)]
-pub fn typing(TypingProps { text, callback }: &TypingProps) -> Html {
+pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacritic_marks}: &TypingProps) -> Html {
     let current_index = use_state(|| 0);
+    let current_card_index = use_state(|| 0);
     let start = use_state(Utc::now);
+    let text_vec : Vec<String> = match show_diacritic_marks {
+        true =>  cards.iter().map(|c| c.to_string()).collect(),
+        false =>  cards.iter().map(|c| c.to_string_without_diacritic()).collect(),
+    };
+    let text = text_vec.iter().fold("".to_string(), |acc, c| acc + &c + " | ");
+    let cards_position : Vec<usize> = vec![];
+    let sum = 0;
+    for i in text_vec{
+        cards_position.push(sum);
+        sum += i.len()+3;
+    }
     let mut statuses = vec![LetterStatus::NotDone; text.len()];
     statuses[0] = LetterStatus::Doing;
     let vec = use_state(|| statuses);
     let on_key_down = {
         let text = text.clone();
         let vec = vec.clone();
-        let callback = callback.clone();
+        let callback = wpm_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
             log!(event.clone());
             let input = event.key();
@@ -59,6 +77,12 @@ pub fn typing(TypingProps { text, callback }: &TypingProps) -> Html {
                 new_vec[*current_index - 1] = LetterStatus::Doing;
                 vec.set(new_vec);
                 current_index.set(*current_index - 1);
+
+                //update card_index
+                if cards_position[*current_card_index] > *current_index{
+                    current_card_index.set(*current_card_index-1);
+                    card_index_callback.emit(*current_card_index);
+                }
                 return;
             }
             if input.len() > 1 {
@@ -86,6 +110,12 @@ pub fn typing(TypingProps { text, callback }: &TypingProps) -> Html {
             vec.set(new_vec);
             if (*current_index) == text_len {
                 callback.emit(calculate_wpm(*start, &text, &*vec));
+            }
+
+            //update card_index
+            if cards_position[*current_card_index] < *current_index{
+                current_card_index.set(*current_card_index+1);
+                card_index_callback.emit(*current_card_index);
             }
         })
     };
