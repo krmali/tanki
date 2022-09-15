@@ -1,5 +1,6 @@
-use gloo::console::log;
-use yew::{function_component, Properties, Html, use_state, UseStateHandle, html, use_context, Callback};
+use std::rc::Rc;
+
+use yew::{function_component, Html, html, use_context, Callback};
 
 use crate::{data::{card::Card, providers::current_cards_provider::CardsContext, generators::random_cards_generator::RandomCardsGenerator}, components::typing::Typing};
 
@@ -13,7 +14,7 @@ use crate::{data::{card::Card, providers::current_cards_provider::CardsContext, 
 
 #[function_component(TypingWrapper)]
 pub fn typing_wrapper() -> Html {
-    let cards_context = use_context::<CardsContext>().expect("could not find cards context");
+    let cards_context = use_context::<Rc<CardsContext>>().expect("could not find cards context");
     let cards_generartor = use_context::<RandomCardsGenerator>().expect("could not find cards generator");
 
     let wpm_callback = {
@@ -23,7 +24,7 @@ pub fn typing_wrapper() -> Html {
     })};
 
     let card_index_callback = {
-        let cards_context = cards_context.clone();
+        let mut cards_context = cards_context.clone();
         Callback::from(move |index: usize| {
             cards_context.current_card_index = index;
     })};
