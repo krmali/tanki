@@ -63,7 +63,7 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
         let vec = vec.clone();
         let callback = wpm_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
-            log!(event.clone());
+            // log!(event.clone());
             let input = event.key();
             if input == "Backspace" {
                 if *current_index == 0 {

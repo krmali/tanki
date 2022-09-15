@@ -1,15 +1,15 @@
 use gloo::{net::http::Request, console::log};
-use yew::{Html, function_component, html, UseStateHandle, use_state, Callback, use_effect_with_deps};
+use yew::{Html, function_component, html, UseStateHandle, use_state, use_effect_with_deps };
+use crate::{data::card::Card, data::providers::current_cards_provider::CurrentCardsProvider, 
+    components::typing_wrapper::TypingWrapper, 
+    data::providers::random_cards_generator_provider::RandomCardsGeneratorProvider};
 
-use crate::{data::card::Card, components::typing::Typing};
 
 
 #[function_component(Tanki)]
 pub fn tanki() -> Html {
     let cards : UseStateHandle<Vec<Card>>= use_state(Vec::new); 
-    let wpm_state : UseStateHandle<f64> = use_state(|| 0.0);
-    let text = "think you number early back same a through should or all these mean consider here they might show even state group eye thing not there";
-
+    // let cards_context = use_context::<Rc<CardsContext>>().expect("could not find cards context from tanki component");
 
     {
         // let cards = cards.clone();
@@ -26,6 +26,8 @@ pub fn tanki() -> Html {
                     .unwrap();
                 
                 log!(serde_json::to_string_pretty(&fetched_cards).unwrap());
+                log!("this is the parsed file");
+                cards.set(fetched_cards);
 
             });
             || ()
@@ -33,11 +35,10 @@ pub fn tanki() -> Html {
     }
 
     html!(
-        <>
-            <Typing text={text} callback={wpm_callback}/>
-            <div>
-                {*wpm_state}
-            </div>
-            </>
+        <CurrentCardsProvider>
+            <RandomCardsGeneratorProvider>
+                <TypingWrapper/>
+            </RandomCardsGeneratorProvider>
+        </CurrentCardsProvider>
         )
 }
