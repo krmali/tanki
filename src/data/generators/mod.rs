@@ -1,1 +1,1 @@
-pub mod random_cards_generator;
+pub mod cards_generator;

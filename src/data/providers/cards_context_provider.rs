@@ -5,6 +5,7 @@ use yew::function_component;
 use crate::data::card::Card;
 
 pub enum CardsContextAction{
+    SetCurrentCards(Vec<Card>),
     SetCardsIndex(usize),
     SetWPM(f64)
 }
@@ -33,6 +34,12 @@ impl Reducible for CardsContext{
 
     fn reduce(self: Rc<Self>, action: Self::Action) -> Rc<Self> {
         match action{
+            CardsContextAction::SetCurrentCards(cards) => CardsContext{
+                current_cards: cards,
+                current_card_index: self.current_card_index,
+                current_wpm: self.current_wpm,
+                show_diacritic_marks: self.show_diacritic_marks,
+            }.into(),
             CardsContextAction::SetCardsIndex(index) => CardsContext{
                 current_cards: self.current_cards.clone(),
                 current_card_index: index,

@@ -17,6 +17,17 @@ impl ToString for Card{
     }
 }
 
+impl Default for Card{
+    fn default() -> Self {
+        Card { front: "".to_owned(), 
+            back: "".to_owned(), 
+            frequencey: 0,
+            front_example: "".to_owned(), 
+            back_example: "".to_owned(),
+        }
+    }
+}
+
 impl Card{
     pub fn to_string_without_diacritic(&self) -> String {
         let mut tmp = [0;4];

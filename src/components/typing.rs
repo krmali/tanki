@@ -1,4 +1,5 @@
 use chrono::prelude::*;
+use gloo::console::log;
 
 use crate::data::card::Card;
 
@@ -13,15 +14,6 @@ pub struct TypingProps {
     pub card_index_callback: Callback<usize>,
     pub show_diacritic_marks: bool,
 }
-
-// impl Default for TypingProps {
-//     fn default() -> Self {
-//         TypingProps {
-//             text: "The quick brown fox jumps over the lazy dog".to_owned(),
-//             callback: Callback::from(move|wpm: f64| {})
-//         }
-//     }
-// }
 
 pub fn calculate_wpm(start: DateTime<Utc>, text: &str, vec: &Vec<LetterStatus>) -> f64 {
     let end = Utc::now();
@@ -47,22 +39,40 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
         true =>  cards.iter().map(|c| c.to_string()).collect(),
         false =>  cards.iter().map(|c| c.to_string_without_diacritic()).collect(),
     };
-    let text = text_vec.iter().fold("".to_string(), |acc, c| acc + &c + " | ");
+    let mut text = text_vec.iter().fold("".to_string(), |acc, c| acc + c + " | ");
+    if !text.is_empty(){text = text[0..text.len()-3].to_string();}
     let mut cards_position : Vec<usize> = vec![];
     let mut sum = 0;
-    for i in text_vec{
+    for (i, el) in text_vec.into_iter().enumerate(){
         cards_position.push(sum);
-        sum += i.len()+3;
+        if i < el.len()-1 {sum += el.len()+3;}
     }
     let mut statuses = vec![LetterStatus::NotDone; text.len()];
-    statuses[0] = LetterStatus::Doing;
-    let vec = use_state(|| statuses);
+    if !text.is_empty(){
+        statuses = vec![LetterStatus::NotDone; text.len()];
+        statuses[0] = LetterStatus::Doing;
+    }
+    let statuses_vec = use_state(|| statuses);
+
+    let start_callback = {
+        let statuses_vec = statuses_vec.clone();
+        let text = text.clone();
+        Callback::from(move |_event: KeyboardEvent| {
+            if (*statuses_vec).is_empty(){
+                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+                new_vec[0] = LetterStatus::Doing;
+                statuses_vec.set(new_vec);
+            }
+        })
+    };
+
     let on_key_down = {
         let text = text.clone();
-        let vec = vec.clone();
+        let vec = statuses_vec.clone();
         let callback = wpm_callback.clone();
         let card_index_callback = card_index_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
+            log!("current index is: ", *current_index, " current card index is: ", *current_card_index);
             // log!(event.clone());
             let input = event.key();
             if input == "Backspace" {
@@ -80,6 +90,8 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
 
                 //update card_index
                 if cards_position[*current_card_index] > *current_index{
+                    log!("will decrement current_card_index");
+                    log!(*current_card_index-1);
                     current_card_index.set(*current_card_index-1);
                     card_index_callback.emit(*current_card_index);
                 }
@@ -103,35 +115,41 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
                 new_vec[*current_index + 1] = LetterStatus::Doing;
                 current_index.set(*current_index + 1);
             }
-            // if input.bytes().nth(0) != text.bytes().nth(*current_index) {
             if input.chars().next() != text.chars().nth(*current_index) {
                 new_vec[*current_index] = LetterStatus::WronglyDone;
             }
             vec.set(new_vec);
             if (*current_index) == text_len {
-                callback.emit(calculate_wpm(*start, &text, &*vec));
+                callback.emit(calculate_wpm(*start, &text, &vec));
             }
 
             //update card_index
             if cards_position[*current_card_index] < *current_index{
+                log!("will increment current_card_index");
+                log!(*current_card_index+1);
+                log!(*current_index);
                 current_card_index.set(*current_card_index+1);
                 card_index_callback.emit(*current_card_index);
             }
         })
     };
 
-    let letters: Html = text
-        .chars()
-        .enumerate()
-        .map(|(index, letter)| {
-            html!(
-            <Letter status={(*vec)[index]} character={letter}/>
-            )
-        })
-        .collect();
-    html!(
-    <div onkeydown={on_key_down} tabindex={0}>
-        {letters}
-    </div>
-    )
+    if cards.is_empty() || statuses_vec.is_empty() || text.is_empty(){
+        return html!(<div onkeydown={start_callback} tabindex={0}>{"press any key to start.."}</div>);
+    }else{
+        let letters: Html = text
+            .chars()
+            .enumerate()
+            .map(|(index, letter)| {
+                html!(
+                <Letter status={(*statuses_vec)[index]} character={letter}/>
+                )
+            })
+            .collect();
+        html!(
+        <div onkeydown={on_key_down} tabindex={0}>
+            {letters}
+        </div>
+        )
+    }
 }

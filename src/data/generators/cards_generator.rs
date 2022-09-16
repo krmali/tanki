@@ -1,42 +1,40 @@
+use gloo::console::log;
+
 use crate::data::card::Card;
 
+
 #[derive(PartialEq)]
-pub struct RandomCardsGenerator{
-    pub cards: Vec<Card>,
+pub struct CardsGenerator{
     pub cards_no_to_generate: u32,
     pub generations_no: u32,
 }
 
-impl Default for RandomCardsGenerator{
+impl Default for CardsGenerator{
     fn default() -> Self {
-        RandomCardsGenerator{
-            cards : Vec::new(),
+        CardsGenerator{
             cards_no_to_generate : 3,
             generations_no : 0
         }
     }
 }
 
-impl RandomCardsGenerator{
-    fn new(vec: &Vec<Card>, cards_no_to_generate: u32) -> Self {
-        RandomCardsGenerator{
-            cards : vec.to_vec(),
+impl CardsGenerator{
+    pub fn new(cards_no_to_generate: u32) -> Self {
+        CardsGenerator{
             cards_no_to_generate,
             generations_no : 0
         }
     }
 
-    fn generate(& mut self) -> Vec::<Card> {
-        let cards_no = self.cards.len();
-
+    pub fn generate_random(&mut self, all_cards: &Vec<Card>) -> Vec::<Card> {
         let mut res = Vec::<Card>::new();
         for _ in 0..self.cards_no_to_generate{
             let mut rand_arry = [0u8; 128];
             let window_instance = web_sys::window().unwrap();
             let crypto = window_instance.crypto().unwrap();
-            let nums = crypto.get_random_values_with_u8_array(&mut rand_arry).unwrap();
+            let _nums = crypto.get_random_values_with_u8_array(&mut rand_arry).unwrap();
             // let y = rand_arry[0] as usize;
-            res.push(self.cards[rand_arry[0] as usize].clone());
+            res.push(all_cards[rand_arry[0] as usize].clone());
         }
         self.generations_no +=1;
         res
@@ -44,7 +42,7 @@ impl RandomCardsGenerator{
 
 }
 
-// impl Clone for RandomCardsGenerator{
+// impl Clone for CardsGenerator{
 //     fn clone(&self) -> Self {
 //         *self
 //     }

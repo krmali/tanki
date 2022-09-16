@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use crate::components::tanki::Tanki;
+use crate::{components::tanki::Tanki, data::providers::cards_context_provider::CardsContextProvider};
 mod components;
 mod data; 
 
@@ -10,7 +10,9 @@ fn main() {
 #[function_component(App)]
 pub fn app() -> Html {
     html!(
-        <Tanki/>
+        <CardsContextProvider>
+            <Tanki/>
+        </CardsContextProvider>
     )
 
     // // let cards_generator = use_context::<CardsGeneratorProvider<RandomCardsGenerator>>();
