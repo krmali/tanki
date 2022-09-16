@@ -44,11 +44,11 @@ impl RandomCardsGenerator{
 
 }
 
-impl Clone for RandomCardsGenerator{
-    fn clone(&self) -> Self {
-        *self
-    }
-}
+// impl Clone for RandomCardsGenerator{
+//     fn clone(&self) -> Self {
+//         *self
+//     }
+// }
 
 //
 // #[derive(Properties, PartialEq)]

@@ -3,7 +3,6 @@ use chrono::prelude::*;
 use crate::data::card::Card;
 
 use super::letter::{Letter, LetterStatus};
-use gloo::console::log;
 use yew::prelude::*;
 
 #[allow(non_camel_case_types)]
@@ -49,8 +48,8 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
         false =>  cards.iter().map(|c| c.to_string_without_diacritic()).collect(),
     };
     let text = text_vec.iter().fold("".to_string(), |acc, c| acc + &c + " | ");
-    let cards_position : Vec<usize> = vec![];
-    let sum = 0;
+    let mut cards_position : Vec<usize> = vec![];
+    let mut sum = 0;
     for i in text_vec{
         cards_position.push(sum);
         sum += i.len()+3;
@@ -62,6 +61,7 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
         let text = text.clone();
         let vec = vec.clone();
         let callback = wpm_callback.clone();
+        let card_index_callback = card_index_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
             // log!(event.clone());
             let input = event.key();

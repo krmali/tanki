@@ -13,7 +13,7 @@ pub struct Card{
 
 impl ToString for Card{
     fn to_string(&self) -> String {
-        self.front_example
+        self.front_example.to_string()
     }
 }
 

@@ -1,24 +1,24 @@
-use std::rc::Rc;
-
 use yew::{function_component, Html, html, use_context, Callback};
 
-use crate::{data::{card::Card, providers::current_cards_provider::CardsContext, generators::random_cards_generator::RandomCardsGenerator}, components::typing::Typing};
+use crate::{data::{providers::cards_context_provider::{CardsContextAction, ReducibleCardsContext}, 
+        generators::random_cards_generator::RandomCardsGenerator}, 
+    components::typing::Typing};
 
 #[function_component(TypingWrapper)]
 pub fn typing_wrapper() -> Html {
-    let cards_context = use_context::<Rc<CardsContext>>().expect("could not find cards context");
-    let cards_generartor = use_context::<RandomCardsGenerator>().expect("could not find cards generator");
+    let cards_context = use_context::<ReducibleCardsContext>().expect("could not find cards context");
+    // let cards_generartor = use_context::<RandomCardsGenerator>().expect("could not find cards generator");
 
     let wpm_callback = {
         Callback::from(move |wpm: f64| {
-            cards_context.current_wpm = wpm;
+            cards_context.dispatch(CardsContextAction::SetWPM(wpm));
     })};
 
     let card_index_callback = {
-        let mut cards_context = cards_context.clone();
         Callback::from(move |index: usize| {
-            cards_context.current_card_index = index;
-    })};
+            cards_context.dispatch(CardsContextAction::SetCardsIndex(index));
+        })
+    };
 
     html!(
         <div>

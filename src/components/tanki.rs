@@ -1,6 +1,6 @@
 use gloo::{net::http::Request, console::log};
 use yew::{Html, function_component, html, UseStateHandle, use_state, use_effect_with_deps };
-use crate::{data::card::Card, data::providers::current_cards_provider::CurrentCardsProvider, 
+use crate::{data::card::Card, data::providers::cards_context_provider::CardsContextProvider, 
     components::typing_wrapper::TypingWrapper, 
     data::providers::random_cards_generator_provider::RandomCardsGeneratorProvider};
 
@@ -35,10 +35,10 @@ pub fn tanki() -> Html {
     }
 
     html!(
-        <CurrentCardsProvider>
+        <CardsContextProvider>
             <RandomCardsGeneratorProvider>
                 <TypingWrapper/>
             </RandomCardsGeneratorProvider>
-        </CurrentCardsProvider>
+        </CardsContextProvider>
         )
 }
