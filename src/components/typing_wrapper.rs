@@ -13,22 +13,28 @@ pub fn typing_wrapper() -> Html {
             cards_context.dispatch(CardsContextAction::SetWPM(wpm));
     })};
 
-    let card_index_callback = {
-        let cards_context = cards_context.clone();
-        Callback::from(move |index: usize| {
-            cards_context.dispatch(CardsContextAction::SetCardsIndex(index));
-        })
-    };
-
     html!(
         <div>
-            <Typing cards={cards_context.current_cards.clone()} 
-                wpm_callback={wpm_callback} 
-                card_index_callback={card_index_callback}
-                show_diacritic_marks={cards_context.show_diacritic_marks}/>
             <div>
                 {cards_context.current_wpm}
             </div>
+            <Typing cards={cards_context.current_cards.clone()} 
+                wpm_callback={wpm_callback} 
+                // card_index_callback={card_index_callback}
+                show_diacritic_marks={cards_context.show_diacritic_marks}/>
+                {if !cards_context.current_cards.is_empty(){
+                        html!(
+
+                                <div>
+                                    {serde_json::to_string_pretty(&cards_context.current_cards[cards_context.current_card_index]).unwrap()}
+                                </div>
+                            )
+                    }else{
+                        html!(
+                            <></>
+                            )
+                    }
+                }
         </div>
         )
 }

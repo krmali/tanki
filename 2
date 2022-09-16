@@ -42,14 +42,11 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
     };
     let mut text = text_vec.iter().fold("".to_string(), |acc, c| acc + c + " | ");
     if !text.is_empty(){text = text[0..text.len()-3].to_string();}
-    let mut cards_position : Vec<(usize, usize)> = vec![];
+    let mut cards_position : Vec<usize> = vec![];
     let mut sum = 0;
     for (i, el) in text_vec.into_iter().enumerate(){
-        let mut temp: (usize, usize) = (sum+1,0);
         if i < el.len()-1 {sum += el.len() + 2;}
-        else {sum += el.len();}
-        temp.1 = sum;
-        cards_position.push(temp);
+        cards_position.push(sum);
     }
     let mut statuses = vec![LetterStatus::NotDone; text.len()];
     if !text.is_empty(){
@@ -76,7 +73,6 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
         let callback = wpm_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
             // log!(event.clone());
-            log!("index: ", *current_index, " | card: ", *current_card_index);
             let input = event.key();
             if input == "Backspace" {
                 if *current_index == 0 {
@@ -92,7 +88,8 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
                 current_index.set(*current_index - 1);
 
                 //update card_index
-                if cards_position[*current_card_index].0 > *current_index{
+                if *current_card_index < cards.len()-1
+                    cards_position[*current_card_index] > *current_index{
                     current_card_index.set(*current_card_index-1);
                     log!("decremented card index: " , *current_card_index-1);
                     cards_context.dispatch(CardsContextAction::SetCardsIndex(*current_card_index-1));
@@ -126,7 +123,7 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
             }
 
             //update card_index
-            if cards_position[*current_card_index].1 < *current_index{
+            if cards_position[*current_card_index] < *current_index{
                 current_card_index.set(*current_card_index+1);
                 log!("incremented card index: " , *current_card_index+1);
                 cards_context.dispatch(CardsContextAction::SetCardsIndex(*current_card_index+1));
