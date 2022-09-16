@@ -57,9 +57,10 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
     let mut cards_position : Vec<(usize, usize)> = vec![];
     let mut sum = 0;
     for (i, el) in text_vec.into_iter().enumerate(){
+        let el_len = el.chars().count();
         let mut temp: (usize, usize) = (sum+1,0);
-        if i < el.len()-1 {sum += el.len() + 2;}
-        else {sum += el.len();}
+        if i < el_len-1 {sum += el_len + 2;}
+        else {sum += el_len;}
         temp.1 = sum;
         cards_position.push(temp);
     }
@@ -88,6 +89,14 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
         let callback = wpm_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
             // log!(event.clone());
+            if vec.len() != text_len{
+                let mut statuses = vec![LetterStatus::NotDone; text_len];
+                if !text.is_empty(){
+                    statuses = vec![LetterStatus::NotDone; text_len];
+                    statuses[0] = LetterStatus::Doing;
+                }
+                vec.set(statuses);
+            }
             log!("index: ", *current_index, " | card: ", *current_card_index, " | size: ", text_len);
             let input = event.key();
             if input == "Backspace" {
@@ -148,8 +157,9 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
             if (*current_index) + 1 == text_len {
                 let wpm = calculate_wpm(*start, &text, &vec);
                 callback.emit(wpm);
-                // current_index.set(0);
-                // current_card_index.set(0);
+                current_index.set(0);
+                current_card_index.set(0);
+                // vec.set(vec![]);
             }
 
             //update card_index
