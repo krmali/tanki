@@ -1,4 +1,4 @@
-use std::{cmp::Ordering};
+use std::{cmp::Ordering, marker::Sized};
 
 use serde::{Serialize, Deserialize};
 

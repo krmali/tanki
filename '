@@ -12,12 +12,9 @@ pub fn tanki() -> Html {
     let generator : UseStateHandle<CardsGenerator>= use_state(CardsGenerator::default); 
 
     let finish_typing_callback = {
-        let cards = cards.clone();
-        let generator = generator.clone();
         let cards_context = cards_context.clone();
-        Callback::from(move |_| {
-            let generated_cards = (*generator).generate_random(&*cards);
-            cards_context.dispatch(CardsContextAction::SetCurrentCards(generated_cards));
+        Callback::from(move |wpm: f64| {
+            cards_context.dispatch(CardsContextAction::SetWPM(wpm));
     })};
 
     {
@@ -35,7 +32,7 @@ pub fn tanki() -> Html {
                 
                 // log!(serde_json::to_string_pretty(&fetched_cards).unwrap());
                 // log!("this is the parsed file");
-                let generated_cards = (*generator).generate_random(&fetched_cards);
+                let generated_cards : Vec<Card> = *generator.generate_random(&fetched_cards);
                 cards.set(fetched_cards);
                 cards_context.dispatch(CardsContextAction::SetCurrentCards(generated_cards));
             });
@@ -44,6 +41,6 @@ pub fn tanki() -> Html {
     }
 
     html!(
-            <TypingWrapper finish_typing_callback={finish_typing_callback}/>
+            <TypingWrapper/>
         )
 }

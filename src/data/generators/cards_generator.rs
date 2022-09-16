@@ -6,14 +6,12 @@ use crate::data::card::Card;
 #[derive(PartialEq)]
 pub struct CardsGenerator{
     pub cards_no_to_generate: u32,
-    pub generations_no: u32,
 }
 
 impl Default for CardsGenerator{
     fn default() -> Self {
         CardsGenerator{
             cards_no_to_generate : 3,
-            generations_no : 0
         }
     }
 }
@@ -22,11 +20,10 @@ impl CardsGenerator{
     pub fn new(cards_no_to_generate: u32) -> Self {
         CardsGenerator{
             cards_no_to_generate,
-            generations_no : 0
         }
     }
 
-    pub fn generate_random(&mut self, all_cards: &Vec<Card>) -> Vec::<Card> {
+    pub fn generate_random(&self, all_cards: &Vec<Card>) -> Vec::<Card> {
         let mut res = Vec::<Card>::new();
         for _ in 0..self.cards_no_to_generate{
             let mut rand_arry = [0u8; 128];
@@ -36,7 +33,6 @@ impl CardsGenerator{
             // let y = rand_arry[0] as usize;
             res.push(all_cards[rand_arry[0] as usize].clone());
         }
-        self.generations_no +=1;
         res
     }
 

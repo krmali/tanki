@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 use chrono::prelude::*;
 use gloo::console::log;
 
@@ -11,7 +13,6 @@ use yew::prelude::*;
 pub struct TypingProps {
     pub cards: Vec<Card>,
     pub wpm_callback: Callback<f64>,
-    // pub card_index_callback: Callback<usize>,
     pub show_diacritic_marks: bool,
 }
 
@@ -36,12 +37,23 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
     let current_index = use_state(|| 0);
     let current_card_index = use_state(|| 0);
     let start = use_state(Utc::now);
-    let text_vec : Vec<String> = match show_diacritic_marks {
-        true =>  cards.iter().map(|c| c.to_string()).collect(),
-        false =>  cards.iter().map(|c| c.to_string_without_diacritic()).collect(),
-    };
-    let mut text = text_vec.iter().fold("".to_string(), |acc, c| acc + c + " | ");
-    if !text.is_empty(){text = text[0..text.len()-3].to_string();}
+    // let text_vec : Vec<String> = match show_diacritic_marks {
+    //     true =>  cards.iter().map(|c| c.to_string()).collect(),
+    //     false =>  cards.iter().map(|c| c.to_string_without_diacritic()).collect(),
+    // };
+    let text_vec : Vec<String> = cards.iter().map(|c| c.to_string()).collect();
+    let map: HashMap<char, char> = HashMap::from([
+               ('Ü', 'U'), ('ü', 'u'), ('Ä', 'A'), ('ä', 'a'),
+               ('Ö', 'O'), ('ö', 'o'), ('ẞ', 's'), ('ß', 's'),
+    ]);
+    // let text  = text_vec.iter().fold("".to_string(), |acc, c| acc + c + " | ");
+    // if !text.is_empty(){text = text[0..text.len()-3].to_string();}
+    let mut temp_text = "".to_string();
+    for (i, el) in (&text_vec).iter().enumerate(){
+        temp_text += el;
+        if i < &text_vec.len()-1{temp_text += " | ";}
+    }
+    let text = temp_text;
     let mut cards_position : Vec<(usize, usize)> = vec![];
     let mut sum = 0;
     for (i, el) in text_vec.into_iter().enumerate(){
@@ -51,19 +63,19 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
         temp.1 = sum;
         cards_position.push(temp);
     }
-    let mut statuses = vec![LetterStatus::NotDone; text.len()];
+    let text_len = text.chars().count();
+    let mut statuses = vec![LetterStatus::NotDone; text_len];
     if !text.is_empty(){
-        statuses = vec![LetterStatus::NotDone; text.len()];
+        statuses = vec![LetterStatus::NotDone; text_len];
         statuses[0] = LetterStatus::Doing;
     }
     let statuses_vec = use_state(|| statuses);
 
     let start_callback = {
         let statuses_vec = statuses_vec.clone();
-        let text = text.clone();
         Callback::from(move |_event: KeyboardEvent| {
             if (*statuses_vec).is_empty(){
-                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+                let mut new_vec = vec![LetterStatus::NotDone; text_len];
                 new_vec[0] = LetterStatus::Doing;
                 statuses_vec.set(new_vec);
             }
@@ -76,13 +88,13 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
         let callback = wpm_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
             // log!(event.clone());
-            log!("index: ", *current_index, " | card: ", *current_card_index);
+            log!("index: ", *current_index, " | card: ", *current_card_index, " | size: ", text_len);
             let input = event.key();
             if input == "Backspace" {
                 if *current_index == 0 {
                     return;
                 }
-                let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+                let mut new_vec = vec![LetterStatus::NotDone; text_len];
                 for (i, _) in vec.iter().enumerate() {
                     new_vec[i] = vec[i];
                 }
@@ -107,22 +119,37 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
             if *current_index == 0 {
                 start.set(Utc::now());
             }
-            let text_len = text.len() - 1;
-            let mut new_vec = vec![LetterStatus::NotDone; text.len()];
+            let mut new_vec = vec![LetterStatus::NotDone; text_len];
             for (i, _) in vec.iter().enumerate() {
                 new_vec[i] = vec[i];
             }
             new_vec[*current_index] = LetterStatus::Done;
-            if *current_index + 1 < text.len() {
+            if *current_index + 1 < text_len {
                 new_vec[*current_index + 1] = LetterStatus::Doing;
                 current_index.set(*current_index + 1);
             }
-            if input.chars().next() != text.chars().nth(*current_index) {
-                new_vec[*current_index] = LetterStatus::WronglyDone;
+            log!(*current_index);
+            let correct_char = text.chars().nth(*current_index).unwrap();
+            let typed_char = input.chars().next().unwrap();
+            match map.get(&correct_char){
+                Some(char) => {
+                    log!(correct_char.to_string() , (*char).to_string(), typed_char.to_string());
+                    if *char != typed_char{
+                        new_vec[*current_index] = LetterStatus::WronglyDone;
+                    }
+                },
+                None => {
+                    if typed_char != correct_char {
+                        new_vec[*current_index] = LetterStatus::WronglyDone;
+                    }
+                }
             }
             vec.set(new_vec);
-            if (*current_index) == text_len {
-                callback.emit(calculate_wpm(*start, &text, &vec));
+            if (*current_index) + 1 == text_len {
+                let wpm = calculate_wpm(*start, &text, &vec);
+                callback.emit(wpm);
+                // current_index.set(0);
+                // current_card_index.set(0);
             }
 
             //update card_index
