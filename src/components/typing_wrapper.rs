@@ -26,7 +26,12 @@ pub fn typing_wrapper() -> Html {
                         html!(
 
                                 <div>
-                                    {serde_json::to_string_pretty(&cards_context.current_cards[cards_context.current_card_index]).unwrap()}
+                                    <ul>
+                                        <li>{&cards_context.current_cards[cards_context.current_card_index].front}</li>
+                                        <li>{&cards_context.current_cards[cards_context.current_card_index].back}</li>
+                                        <li>{&cards_context.current_cards[cards_context.current_card_index].frequencey}</li>
+                                        <li>{&cards_context.current_cards[cards_context.current_card_index].back_example}</li>
+                                    </ul>
                                 </div>
                             )
                     }else{
