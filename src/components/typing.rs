@@ -44,8 +44,8 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
     let mut cards_position : Vec<usize> = vec![];
     let mut sum = 0;
     for (i, el) in text_vec.into_iter().enumerate(){
+        if i < el.len()-1 {sum += el.len() + 2;}
         cards_position.push(sum);
-        if i < el.len()-1 {sum += el.len()+3;}
     }
     let mut statuses = vec![LetterStatus::NotDone; text.len()];
     if !text.is_empty(){
@@ -72,7 +72,6 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
         let callback = wpm_callback.clone();
         let card_index_callback = card_index_callback.clone();
         Callback::from(move |event: KeyboardEvent| {
-            log!("current index is: ", *current_index, " current card index is: ", *current_card_index);
             // log!(event.clone());
             let input = event.key();
             if input == "Backspace" {
@@ -90,8 +89,6 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
 
                 //update card_index
                 if cards_position[*current_card_index] > *current_index{
-                    log!("will decrement current_card_index");
-                    log!(*current_card_index-1);
                     current_card_index.set(*current_card_index-1);
                     card_index_callback.emit(*current_card_index);
                 }
@@ -125,9 +122,6 @@ pub fn typing(TypingProps { cards, wpm_callback, card_index_callback, show_diacr
 
             //update card_index
             if cards_position[*current_card_index] < *current_index{
-                log!("will increment current_card_index");
-                log!(*current_card_index+1);
-                log!(*current_index);
                 current_card_index.set(*current_card_index+1);
                 card_index_callback.emit(*current_card_index);
             }
