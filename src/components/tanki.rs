@@ -25,7 +25,7 @@ pub fn tanki() -> Html {
         use_effect_with_deps( move |_| {
             let generator = generator.clone();
             wasm_bindgen_futures::spawn_local(async move {
-                let fetched_cards : Vec<Card> = Request::get("http://localhost:8081/german.json")
+                let fetched_cards : Vec<Card> = Request::get("http://127.0.0.1:8081/german.json")
                     .send()
                     .await
                     .unwrap()
@@ -43,7 +43,9 @@ pub fn tanki() -> Html {
         }, ());
     }
 
-    html!(
+
+
+    html!{
             <TypingWrapper finish_typing_callback={finish_typing_callback}/>
-        )
+        }
 }

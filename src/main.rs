@@ -4,7 +4,7 @@ mod components;
 mod data; 
 
 fn main() {
-    yew::Renderer::<App>::new().render();
+    yew::start_app::<App>();
 }
 
 #[function_component(App)]

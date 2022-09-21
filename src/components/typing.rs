@@ -2,6 +2,7 @@ use std::collections::HashMap;
 
 use chrono::prelude::*;
 use gloo::console::log;
+use stylist::{css, yew::styled_component, style};
 
 use crate::data::{card::Card, providers::cards_context_provider::{ReducibleCardsContext, CardsContextAction}};
 
@@ -31,7 +32,7 @@ pub fn calculate_wpm(start: DateTime<Utc>, text: &str, vec: &Vec<LetterStatus>) 
 }
 
 
-#[function_component(Typing)]
+#[styled_component(Typing)]
 pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingProps) -> Html {
     let cards_context = use_context::<ReducibleCardsContext>().expect("could not find cards context");
     let current_index = use_state(|| 0);
@@ -171,6 +172,12 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
         })
     };
 
+    let style = style!(r#"
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    width: 66%;
+                       "#).unwrap();
+
     if cards.is_empty() || statuses_vec.is_empty() || text.is_empty(){
         return html!(<div onkeydown={start_callback} tabindex={0}>{"press any key to start.."}</div>);
     }else{
@@ -184,7 +191,7 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
             })
             .collect();
         html!(
-        <div onkeydown={on_key_down} tabindex={0}>
+        <div class={style} onkeydown={on_key_down} tabindex={0}>
             {letters}
         </div>
         )

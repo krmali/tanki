@@ -18,10 +18,10 @@ pub struct LetterProps{
 pub fn letter(LetterProps{status, character} : &LetterProps) -> Html {
     html! {
         <span style={match status{
-            LetterStatus::Done => "color: green;",
+            LetterStatus::Done => "color: var(--text-color);",
             LetterStatus::Doing => "text-decoration: underline;",
-            LetterStatus::WronglyDone => "color: red",
-            _ => ""
+            LetterStatus::WronglyDone => "color: var(--error-color)",
+            _ => "color: var(--sub-color)"
         }}>{character}</span>
     }
 }

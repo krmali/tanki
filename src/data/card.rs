@@ -6,7 +6,7 @@ use serde::{Serialize, Deserialize};
 pub struct Card{
     pub front: String,
     pub back: String,
-    pub frequencey: u32,
+    pub frequency: u32,
     pub front_example: String,
     pub back_example: String
 }
@@ -21,7 +21,7 @@ impl Default for Card{
     fn default() -> Self {
         Card { front: "".to_owned(), 
             back: "".to_owned(), 
-            frequencey: 0,
+            frequency: 0,
             front_example: "".to_owned(), 
             back_example: "".to_owned(),
         }
@@ -60,7 +60,7 @@ struct Cards(Vec<Card>);
 
 impl Ord for Card{
     fn cmp(&self, other: &Self) -> Ordering {
-        self.frequencey.cmp(&other.frequencey)
+        self.frequency.cmp(&other.frequency)
     }
 }
 
@@ -72,7 +72,7 @@ impl PartialOrd for Card{
 
 impl PartialEq for Card{
     fn eq(&self, other: &Self) -> bool {
-        self.frequencey == other.frequencey
+        self.frequency == other.frequency
     }
 }
 
