@@ -29,18 +29,18 @@ pub fn dict_card() -> Html {
                 <div class={css!("font-size: 4rem;line-height: 4rem; font-family: 'FiraSans-Bold';")}>
                     {&cards_context.current_cards[cards_context.current_card_index].front}
                 </div>
-                <div class={css!("align-self: flex-end;")}>
+                <div class={css!("color: var(--main-color); font-size: 2rem;")}>
                     {&cards_context.current_cards[cards_context.current_card_index].back}
                 </div>
             </div>
-             <div class={css!("align-self: flex-start;")}>
+             <div class={css!("color: var(--colorful-error-color);")}>
                 {&cards_context.current_cards[cards_context.current_card_index].back_example}
             </div>
-            <div>
+            <div class={css!("display: flex; justify-content: space-between;")}>
                 <div class={css!("")}>
                     {"frequency:"}
                 </div>
-                <div class={css!("align-self: flex-end;")}>
+                <div class={css!("font-family: 'FiraSans-Bold'; color: var(--colorful-error-color);")}>
                     {&cards_context.current_cards[cards_context.current_card_index].frequency}
                 </div>
             </div>

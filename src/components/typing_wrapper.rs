@@ -1,6 +1,7 @@
 use gloo::console::log;
 use stylist::{style, yew::styled_component};
 use yew::{function_component, html, use_context, Callback, Html, Properties};
+use yew_icons::{Icon, IconId};
 
 use crate::{
     components::{dict_card::DictCard, typing::Typing},
@@ -51,8 +52,16 @@ pub fn typing_wrapper(
 
     html!(
     <div class={style}>
-        <div class={css!("font-size: 4rem;line-height: 4rem; color: var(--main-color);")}>
-            {cards_context.current_wpm as usize}
+        <div class={css!("display: flex;justify-content: space-between;width: 1000px;")}>
+            <div class={css!("display: flex;align-items: center;")}>
+                <Icon icon_id={IconId::FontAwesomeSolidKeyboard} width={"40".to_owned()} height={"40".to_owned()}/>
+                <div class={css!("font-size: 3rem;line-height: 3rem; font-family: 'FiraSans-Bold'; margin-left: 15px; color: var(--text-color);")}>
+                    {"tanki"}
+                </div>
+            </div>
+            <div class={css!("font-size: 4rem;line-height: 4rem; color: var(--main-color);")}>
+                {cards_context.current_wpm as usize}
+            </div>
         </div>
 
         <Typing  cards={cards_context.current_cards.clone()}
@@ -61,16 +70,18 @@ pub fn typing_wrapper(
             show_diacritic_marks={cards_context.show_diacritic_marks}/>
             {if !cards_context.current_cards.is_empty(){
                     html!(
-                        // <DictCard />
+                        <>
+                        <DictCard />
 
-                            <div>
-                                <ul>
-                                    <li>{&cards_context.current_cards[cards_context.current_card_index].front}</li>
-                                    <li>{&cards_context.current_cards[cards_context.current_card_index].back}</li>
-                                    <li>{&cards_context.current_cards[cards_context.current_card_index].frequency}</li>
-                                    <li>{&cards_context.current_cards[cards_context.current_card_index].back_example}</li>
-                                </ul>
-                            </div>
+                            // <div>
+                            //     <ul>
+                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].front}</li>
+                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].back}</li>
+                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].frequency}</li>
+                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].back_example}</li>
+                            //     </ul>
+                            // </div>
+                            </>
                         )
                 }else{
                     html!(
