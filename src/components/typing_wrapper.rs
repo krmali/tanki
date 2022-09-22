@@ -52,24 +52,25 @@ pub fn typing_wrapper(
     html!(
     <div class={style}>
         <div class={css!("font-size: 4rem;line-height: 4rem; color: var(--main-color);")}>
-            {cards_context.current_wpm}
+            {cards_context.current_wpm as usize}
         </div>
+
         <Typing  cards={cards_context.current_cards.clone()}
             wpm_callback={wpm_callback}
             // card_index_callback={card_index_callback}
             show_diacritic_marks={cards_context.show_diacritic_marks}/>
             {if !cards_context.current_cards.is_empty(){
                     html!(
-                        <DictCard />
+                        // <DictCard />
 
-                            // <div>
-                            //     <ul>
-                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].front}</li>
-                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].back}</li>
-                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].frequencey}</li>
-                            //         <li>{&cards_context.current_cards[cards_context.current_card_index].back_example}</li>
-                            //     </ul>
-                            // </div>
+                            <div>
+                                <ul>
+                                    <li>{&cards_context.current_cards[cards_context.current_card_index].front}</li>
+                                    <li>{&cards_context.current_cards[cards_context.current_card_index].back}</li>
+                                    <li>{&cards_context.current_cards[cards_context.current_card_index].frequency}</li>
+                                    <li>{&cards_context.current_cards[cards_context.current_card_index].back_example}</li>
+                                </ul>
+                            </div>
                         )
                 }else{
                     html!(
