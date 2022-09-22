@@ -23,7 +23,7 @@
 # production environment
 FROM nginx:stable-alpine
 # COPY --from=build /usr/src /usr/share/nginx/html
-COPY german.json dist/german.json
+COPY ./german.json /usr/share/nginx/html/german.json
 ADD ./dist /usr/share/nginx/html/
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
