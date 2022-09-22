@@ -2,6 +2,7 @@ use yew::prelude::*;
 use crate::{components::tanki::Tanki, data::providers::cards_context_provider::CardsContextProvider};
 mod components;
 mod data; 
+mod env;
 
 fn main() {
     yew::start_app::<App>();

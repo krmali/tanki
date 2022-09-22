@@ -2,6 +2,7 @@ use gloo::{net::http::Request, console::log};
 use yew::{Html, function_component, html, UseStateHandle, use_state, use_effect_with_deps, use_context, Callback };
 use crate::{data::{card::Card, providers::cards_context_provider::{ReducibleCardsContext, CardsContextAction}, generators::cards_generator::CardsGenerator}, data::providers::cards_context_provider::CardsContextProvider, 
     components::typing_wrapper::TypingWrapper,};
+use crate::env::SERVER_URL;
 
 
 
@@ -25,7 +26,7 @@ pub fn tanki() -> Html {
         use_effect_with_deps( move |_| {
             let generator = generator.clone();
             wasm_bindgen_futures::spawn_local(async move {
-                let fetched_cards : Vec<Card> = Request::get("http://127.0.0.1:8081/german.json")
+                let fetched_cards : Vec<Card> = Request::get(format!("{}/german.json", SERVER_URL).as_str())
                     .send()
                     .await
                     .unwrap()
