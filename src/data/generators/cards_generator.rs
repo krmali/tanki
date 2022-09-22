@@ -30,8 +30,8 @@ impl CardsGenerator{
             let window_instance = web_sys::window().unwrap();
             let crypto = window_instance.crypto().unwrap();
             let _nums = crypto.get_random_values_with_u8_array(&mut rand_arry).unwrap();
-            // let y = rand_arry[0] as usize;
-            res.push(all_cards[rand_arry[0] as usize].clone());
+            let random_number = ((rand_arry[0] as usize) * (rand_arry[1] as usize))%all_cards.len();
+            res.push(all_cards[random_number].clone());
         }
         res
     }
