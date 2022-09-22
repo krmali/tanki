@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en"><head>
+    <title>Tanki</title>
+    <meta charset="UTF-8">
+    
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+      <style>
+    @font-face {
+      font-family: 'FiraMono-Regular';
+      src: local('FiraMono-Regular'), url(./assets/fonts/FiraMono-Regular.woff) format('woff');
+    }
+    @font-face {
+      font-family: 'FiraSans-Regular';
+      src: local('FiraSans-Regular'), url(./assets/fonts/FiraSans-Regular.woff) format('woff');
+    }
+    @font-face {
+      font-family: 'FiraSans-Bold';
+      src: local('FiraSans-Bold'), url(./assets/fonts/FiraSans-Bold.woff) format('woff');
+    }
+    @font-face {
+      font-family: 'FiraSans-Medium';
+      src: local('FiraSans-Medium'), url(./assets/fonts/FiraSans-Medium.woff) format('woff');
+    }
+    :root{
+        --bg-color: #333a45;
+        --main-color: #f44c7f;
+        --caret-color: #f44c7f;
+        --sub-color: #939eae;
+        --sub-alt-color: #000;
+        --sub-alt-color: #2e343d;
+        --text-color: #e9ecf0;
+        --error-color: #da3333;
+        --error-extra-color: #791717;
+        --colorful-error-color: #c5da33;
+        --colorful-error-extra-color: #849224;
+        --dict-card-bg-color: #1f242c;
+    }
+    html{
+        height: 100%
+    }
+    body {
+      background-color: var(--bg-color);
+      height: 100%;
+      font-family: "FiraMono-Regular";
+    }
+  </style>
+  
+<link rel="preload" href="/tanki-5a2504272e8dbd5d_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/tanki-5a2504272e8dbd5d.js"></head>
+<body>
+<script type="module">import init from '/tanki-5a2504272e8dbd5d.js';init('/tanki-5a2504272e8dbd5d_bg.wasm');</script></body></html>
