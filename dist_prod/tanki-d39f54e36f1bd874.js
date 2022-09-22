@@ -668,7 +668,7 @@ function initSync(bytes) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('tanki-5a2504272e8dbd5d_bg.wasm', import.meta.url);
+        input = new URL('tanki-d39f54e36f1bd874_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
