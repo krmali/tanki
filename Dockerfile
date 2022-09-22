@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN rustup target add wasm32-unknown-unknown
 RUN cargo install trunk
-RUN rm env.rs
-RUN mv env.rs.prod env.rs
+RUN rm src/env.rs
+RUN mv src/env.rs.prod src/env.rs
 RUN trunk build --release
 
 # production environment
