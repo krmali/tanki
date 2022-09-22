@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+   front:
+     build: ./Dockerfile
+     ports:
+       - '4202:80'
