@@ -179,7 +179,7 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
                        "#).unwrap();
 
     if cards.is_empty() || statuses_vec.is_empty() || text.is_empty(){
-        return html!(<div onkeydown={start_callback} tabindex={0}>{"press any key to start.."}</div>);
+        return html!(<div class={css!("font-size: 2rem;")} onkeydown={start_callback} tabindex={0}>{"press tab then any key to start.."}</div>);
     }else{
         let letters: Html = text
             .chars()
