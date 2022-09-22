@@ -36,10 +36,10 @@ pub fn dict_card() -> Html {
              <div class={css!("color: var(--colorful-error-color);")}>
                 {&cards_context.current_cards[cards_context.current_card_index].back_example}
             </div>
-            <div class={css!("display: flex; justify-content: space-between;")}>
-                <div class={css!("")}>
-                    {"frequency:"}
-                </div>
+            <div class={css!("display: flex; justify-content: flex-end;")}>
+                // <div class={css!("")}>
+                //     {"frequency:"}
+                // </div>
                 <div class={css!("font-family: 'FiraSans-Bold'; color: var(--colorful-error-color);")}>
                     {&cards_context.current_cards[cards_context.current_card_index].frequency}
                 </div>

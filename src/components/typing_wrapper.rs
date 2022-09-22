@@ -62,6 +62,9 @@ pub fn typing_wrapper(
             <div class={css!("font-size: 4rem;line-height: 4rem; color: var(--main-color);")}>
                 {cards_context.current_wpm as usize}
             </div>
+            <a class={css!("color: var(--text-color);")} href="https://github.com/krmali/tanki" tabindex="-1">
+                <Icon icon_id={IconId::BootstrapGithub} width={"30".to_owned()} height={"30".to_owned()}/>
+            </a>
         </div>
 
         <Typing  cards={cards_context.current_cards.clone()}
