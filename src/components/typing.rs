@@ -98,7 +98,7 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
                 }
                 vec.set(statuses);
             }
-            log!("index: ", *current_index, " | card: ", *current_card_index, " | size: ", text_len);
+            // log!("index: ", *current_index, " | card: ", *current_card_index, " | size: ", text_len);
             let input = event.key();
             if input == "Backspace" {
                 if *current_index == 0 {
@@ -116,12 +116,13 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
                 //update card_index
                 if cards_position[*current_card_index].0 > *current_index{
                     current_card_index.set(*current_card_index-1);
-                    log!("decremented card index: " , *current_card_index-1);
+                    // log!("decremented card index: " , *current_card_index-1);
                     cards_context.dispatch(CardsContextAction::SetCardsIndex(*current_card_index-1));
                 }
                 return;
             }
-            if input.len() > 1 {
+            // log!(input.len(), " :" , input.clone());
+            if input.chars().count() > 1 {
                 return;
             }
 
@@ -138,13 +139,14 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
                 new_vec[*current_index + 1] = LetterStatus::Doing;
                 current_index.set(*current_index + 1);
             }
-            log!(*current_index);
+            // log!(*current_index);
             let correct_char = text.chars().nth(*current_index).unwrap();
             let typed_char = input.chars().next().unwrap();
+            // log!(correct_char.to_string(), " : ", typed_char.to_string(), " : ", correct_char == typed_char);
             match map.get(&correct_char){
                 Some(char) => {
-                    log!(correct_char.to_string() , (*char).to_string(), typed_char.to_string());
-                    if *char != typed_char{
+                    // log!(correct_char.to_string() , (*char).to_string(), typed_char.to_string());
+                    if typed_char != correct_char && *char != typed_char{
                         new_vec[*current_index] = LetterStatus::WronglyDone;
                     }
                 },
@@ -166,7 +168,7 @@ pub fn typing(TypingProps { cards, wpm_callback, show_diacritic_marks}: &TypingP
             //update card_index
             if cards_position[*current_card_index].1 < *current_index{
                 current_card_index.set(*current_card_index+1);
-                log!("incremented card index: " , *current_card_index+1);
+                // log!("incremented card index: " , *current_card_index+1);
                 cards_context.dispatch(CardsContextAction::SetCardsIndex(*current_card_index+1));
             }
         })
